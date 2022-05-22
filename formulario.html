@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <h1>Formulario de contacto</h1>
+    <div class="contenido">
+        <form id="formularioContacto">
+            <label for="usuario">Nombre</label>
+            <input id="usuario" name="usuario" type="text" autocomplete="off">
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" autocomplete="off">
+            <label for="asunto">Asunto</label>
+            <input id="asunto" name="asunto" type="text" autocomplete="off">
+            <label for="mensaje">Mensaje</label>
+            <textarea class="mensaje" id="mensaje" name="mensaje" type="text"></textarea>
+            <button type="nuevo" onclick="formulario()">Enviar</button>
+            <button type="nuevo" onclick="resetearForm()">Reiniciar</button>
+        </form>
+    </div>
+
+    <button type="nuevo" onclick="redirButton()" class="irInicio">Página inicial</button>
+</body>
+
+</html>

@@ -1,0 +1,2816 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talleres Pseint</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+
+</head>
+
+<body onload="acord()">
+    <div class="contenido">
+        <h1 id="tit1">Talleres de Pseint</h1>
+        <article>
+            <!-- Taller 1 -->
+            <button class="acordeon">Taller 1</button>
+            <div class="panel">
+                <!-- Punto 1 -->
+                <div id="T1P1">
+                    <h3>Punto 1</h3>
+                    <h5 type="enunciado">Enunciado: 1. Realizar un programa el cual solicite su nombre y apellidos.</h5>
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_1
+    Definir nombre Como Caracter;
+    Definir apellidos Como Caracter;
+
+    Escribir "Escriba su Nombre";
+    leer nombre;
+    Escribir "Escriba sus apellidos";
+    leer apellidos;
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- Punto 2 -->
+                <div id="T1P2">
+                    <h3>Punto 2</h3>
+                    <h5 type="enunciado">Enunciado: 2. Realizar un programa el cual solicite su nombre, apellidos, edad
+                        y estatura.</h5>
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_2
+    Definir nombre Como Caracter;
+    Definir apellidos Como Caracter;
+    Definir edad Como Entero;
+    Definir estatura Como Real;
+
+    Escribir "Escriba su Nombre";
+    leer nombre;
+    Escribir "Escriba sus apellidos";
+    leer apellidos;
+    Escribir "Escriba su edad en años";
+    leer edad;
+    Escribir "Escriba su estatura en metros";
+    leer estatura;
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- Punto 3 -->
+                <div id="T1P3">
+                    <h3>Punto 3</h3>
+                    <h5 type="enunciado">Enunciado: 3. Realizar un programa el cual solicite su nombre y apellidos,
+                        también debe capturar nombre y apellidos de su padre y madre. Al finalizar debe imprimir en
+                        pantalla el siguiente mensaje "Yo [Nombre Completo], soy hijo de [Nombre de la Madre] y [Nombre
+                        del Padre].</h5>
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_3
+    Definir nombre Como Caracter;
+    Definir apellidos Como Caracter;
+    Definir nombrePadre Como Caracter;
+    Definir apellidosPadre Como Caracter;
+    Definir nombreMadre Como Caracter;
+    Definir apellidosMadre Como Caracter;
+                        
+    Escribir "Escriba su nombre";
+    leer nombre;
+    Escribir "Escriba sus apellidos";
+    leer apellidos;
+    Escribir "Escriba el nombre de su Padre";
+    leer nombrePadre;
+    Escribir "Escriba los apellidos de su padre";
+    leer apellidosPadre;
+    Escribir "Escriba el nombre de su Madre";
+    leer nombreMadre;
+    Escribir "Escriba los apellidos de su Madre";
+    leer apellidosMadre;
+                        
+    Escribir "Yo ",nombre," ",apellidos,", soy hijo de ", nombreMadre, " ", apellidosMadre, " y " , nombrePadre, " ", apellidosPadre;
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- Punto 4 -->
+                <div id="T1P4">
+                    <h3>Punto 4</h3>
+                    <h5 type="enunciado">Enunciado: 4. Realizar un programa el cual solicite el nombre de una ciudad
+                        capital y el país. Al finalizar debe imprimir en pantalla el siguiente mensaje "La ciudad
+                        [Nombre de la Ciudad], es la capital del país [Nombre del País].</h5>
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_4
+    Definir ciudad Como Caracter;
+    Definir pais Como Caracter;
+    
+    Escribir "Escriba la ciudad Capital";
+    leer ciudad;
+    Escribir "Escriba el país del que es capital la ciudad anteriormente escrita";
+    leer pais;
+    
+    Escribir "La ciudad ",ciudad,", es la capital del país ",pais;
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- Punto 5 -->
+                <div id="T1P5">
+                    <h3>Punto 5</h3>
+                    <h5 type="enunciado">Enunciado: 5. Realizar un programa el cual solicite el nombre de su mascota,
+                        edad de la mascota, el tipo de mascota y su nombre completo. Al finalizar el sistema debe e
+                        imprimir en pantalla el siguiente mensaje: [Nombre de Mascota] es un(a) [Tipo de Mascota], el
+                        cual, tiene [Edad de la Mascota] años de edad y [Nombre Completo] es actualmente su dueño(a).
+                    </h5>
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_5
+    Definir nombreMascota Como Caracter;
+    Definir edadMascota Como Entero;
+    Definir tipoMascota Como Caracter;
+    Definir nombre Como Caracter;
+    Definir apellidos Como Caracter;
+    
+    Escribir "Escriba el nombre de su mascota";
+    leer nombreMascota;
+    Escribir "Digite la edad de su mascota";
+    leer edadMascota;
+    Escribir "Escriba el tipo de mascota que es ", nombreMascota," (ej: gato)";
+    leer tipoMascota;
+    Escribir "Escriba su nombre";
+    leer nombre;
+    Escribir "Escriba sus apellidos";
+    leer apellidos;
+    
+    Escribir nombreMascota, " es un(a) ", tipoMascota, ", el cual tiene ", edadMascota," años de edad y ", nombre, " ",apellidos," es actualmente su dueño(a)";
+    
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+            </div>
+            <!-- Taller 2 -->
+            <button class="acordeon">Taller 2</button>
+            <div class="panel">
+                <!-- Punto 1 -->
+                <div id="T2P1">
+                    <h3>Punto 1</h3>
+                    <h5 type="enunciado">Enunciado: 1. Realizar un programa en el cual se solicite la edad de una persona. Si la persona es
+                        mayor o igual a 18 años, deberá mostrar en pantalla: Usted es mayor de edad.</h5>
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_1
+    Definir edad Como Entero;
+    
+    Escribir "Digite su edad:";
+    Leer edad;
+    
+    Si edad >= 18 Entonces
+        Escribir "Usted es mayor de edad";
+    FinSi
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- Punto 2 -->
+                <div id="T2P2">
+                    <h3>Punto 2</h3>
+                    <h5 type="enunciado">Enunciado: 2. Realizar un programa en el cual se solicite la edad de una persona. Si la persona es
+                        menor a 18 años, deberá mostrar en pantalla: Usted aún es un niño(a).</h5>
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_2
+    Definir edad Como Entero;
+    
+    Escribir "Digite su edad:";
+    Leer edad;
+    
+    Si edad <= 18 Entonces
+        Escribir "Usted aun es un niño(a)";
+    FinSi
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- Punto 3 -->
+                <div id="T2P3">
+                    <h3>Punto 3</h3>
+                    <h5 type="enunciado">Enunciado: 3. Realizar un programa en el cual se solicite el nombre, apellidos y edad de la
+                        persona. Si la persona es mayor o igual a 18 años, entonce se deberá imprimir en pantalla <b>[Nombre completo] usted es
+                        mayor de edad, por lo tanto puede entrar a la fiesta</b>. Si la edad de la persona es menor que 18 años, entonces,
+                        deberá imprimirse el siguiente mensaje: <b>[Nombre completo] usted es menor de edad, por lo tanto, no puede entrar a la
+                        fiesta, por favor devuélvase a su casa</b>.</h5>
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_3
+    Definir nombre Como Caracter;
+    Definir apellido Como Caracter;
+    Definir edad Como Entero;
+    
+    Escribir "Ingrese su nombre";
+    Leer nombre;
+    Escribir "Ingrese su apellido";
+    Leer apellido;
+    Escribir "Digite su edad";
+    Leer edad;
+    
+    Si edad >= 18 Entonces
+        Escribir nombre," ",apellido," usted es mayor de edad, por lo tanto puede entrar a la fiesta.";
+    SiNo
+        Escribir nombre," ",apellido," usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa.";
+    FinSi
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- Punto 4 -->
+                <div id="T2P4">
+                    <h3>Punto 4</h3>
+                    <h5 type="enunciado">Enunciado: 4. La video tienda que presta sus servicios de alquiler de películas a los usuarios del
+                        barrio el Porvenir, requiere de una aplicación que permita registrar el alquiler de las películas que adquieren sus
+                        usuarios. Para cada usuario se debe permitir la opción de alquilar película, consultar películas disponibles y
+                        recibir película en la video tienda con la opción de realizar anotaciones sobre estas si se llegan a presentar daños
+                        u otra novedad sobre la película.</h5>
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_4
+//	Definir variables
+    Definir pelicula1, pelicula2, pelicula3 Como Caracter;
+    pelicula1 <- "Batman";
+    pelicula2 <- "Minions";
+    pelicula3 <- "Sonic";
+    
+    Definir opcion Como Entero;
+    
+    Definir alquilarPeli Como Caracter;
+    Definir novedad Como Caracter;
+    Definir descNovedad Como Caracter;
+//	Menú inicial
+    Escribir "Elija una opcion escribiendo el número correspondiente";
+    Escribir "1. Alquilar una pelicula";
+    Escribir "2. Consultar peliculas";
+    Escribir "3. Regresar pelicula";
+    Leer opcion;
+//	Opciones
+    Segun opcion Hacer
+        1:	//Alquilar
+            Escribir "Escriba el nombre de la pelicula a alquilar";
+            Leer alquilarPeli;
+            Si (alquilarPeli=pelicula1) o (alquilarPeli=pelicula2) o (alquilarPeli=pelicula3) Entonces
+                Escribir "Usted alquiló la pelicula: ",alquilarPeli;
+            SiNo
+                Escribir "Esa pelicula no se encuentra disponible";
+                Escribir "Consulte las peliculas disponibles en el menú inicial";
+            FinSi
+        2:	//Consultar
+            Escribir "Las peliculas disponibles son:";
+            Escribir "1: ",pelicula1;
+            Escribir "2: ",pelicula2;
+            Escribir "3: ",pelicula3;
+        3:	//Regresar pelicula
+            Escribir "Usted va a regresar una pelicula";
+            Escribir "¿Desea reportar una novedad con la pelicula? Si o No";
+            Leer novedad;
+            Si novedad="Si" o novedad="SI" o novedad="si" Entonces
+                Escribir "Escriba la novedad que desea reportar";
+                Leer descNovedad;
+                Escribir "Usted reportó la novedad con la pelicula";
+            FinSi
+    FinSegun
+    
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- Punto 5 -->
+                <div id="T2P5">
+                    <h3>Punto 5</h3>
+                    <h5 type="enunciado">Enunciado: 5. La Droguería Mi Salud presta sus servicios en la localidad de Suba y requiere una
+                        aplicación para poder facturar los productos que vende a sus clientes y para ello, los productos tienen unas
+                        características que deben indicársele al cliente para que pueda escoger el producto a comprar. Para cada cliente, se
+                        tienen las opciones de compra de producto, consulta de precios por producto y devoluciones en caso de que se
+                        presenten.</h5>
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_5
+    //Define nombre, precio y descripción de cada producto
+    Definir producto1 Como Caracter;
+    Definir producto2 Como Caracter;
+    Definir producto3 Como Caracter;
+    Definir pProducto1 Como Real;
+    Definir pProducto2 Como Real;
+    Definir pProducto3 Como Real;
+    Definir dProducto1 Como Caracter;
+    Definir dProducto2 Como Caracter;
+    Definir dProducto3 Como Caracter;
+    
+    producto1<-"Acetaminophen";
+    pProducto1<-10500;
+    dProducto1<-"Alivia dolores";
+    
+    producto2<-"Antigripal";
+    pProducto2<-8350;
+    dProducto2<-"Para sintomas de la gripa";
+    
+    producto3<-"Ibuprofeno";
+    pProducto3<-5700;
+    dProducto3<-"Reduce la inflamación";
+    
+    //Definir variables generales
+    Definir opcion Como Entero;
+    Definir compra Como Caracter;
+    Definir devolucion Como Caracter;
+    
+    //Menú  
+    Escribir "---Drogueria Mi Salud---";
+    Escribir "Elija una opcion escribiendo el número correspondiente";
+    Escribir "1. Comprar producto";
+    Escribir "2. Consultar precios";
+    Escribir "3. Devoluciones de productos";
+    Leer opcion;
+    Limpiar Pantalla;
+    
+    //opciones
+    Segun opcion Hacer
+        1:	//Comprar
+            Escribir "---Drogueria Mi Salud---";
+            Escribir "Elija un producto escribiendo el número correspondiente";
+            Escribir "1. Acetaminophen";
+            Escribir "2. Antigripal";
+            Escribir "3. Ibuprofeno";
+            Leer opcion;
+            Limpiar Pantalla;
+            
+            Si opcion=1 Entonces
+                Escribir producto1;
+                Escribir "Tiene un precio de: ",pProducto1;
+                Escribir "Descripción: ",dProducto1;
+            FinSi
+            Si opcion=2 Entonces
+                Escribir producto2;
+                Escribir "Tiene un precio de: ",pProducto2;
+                Escribir "Descripción: ",dProducto2;
+            FinSi
+            Si opcion=3 Entonces
+                Escribir producto3;
+                Escribir "Tiene un precio de: ",pProducto3;
+                Escribir "Descripción: ",dProducto3;
+            FinSi
+            
+            Escribir "¿Desea confirmar su compra?";
+            Leer compra;
+            Si compra="Si" o compra="SI" o compra="si" Entonces
+                Limpiar Pantalla;
+                
+                Escribir "---Drogueria Mi Salud---";
+                Escribir "Elija una opción de pago";
+                Escribir "1. Efectivo";
+                Escribir "2. Tarjeta";
+                Escribir "3. QR";
+                Leer opcion;
+                
+                Si opcion=1 Entonces
+                    Escribir "Compra realizada con Efectivo";
+                FinSi
+                Si opcion=2 Entonces
+                    Escribir "Compra realizada con Tarjeta";
+                FinSi
+                Si opcion=3 Entonces
+                    Escribir "Compra realizada con QR";
+                FinSi
+            SiNo
+                Escribir "Compra Rechazada";
+            FinSi
+            
+        2:	//Ver precios
+            Escribir "---Drogueria Mi Salud---";
+            Escribir "Precios: ";
+            Escribir "1. Acetaminophen: ",pProducto1," pesos";
+            Escribir "2. Antigripal: ",pProducto2," pesos";
+            Escribir "3. Ibuprofeno: ",pProducto3," pesos";
+            
+        3:	//Devoluciones
+            Escribir "---Drogueria Mi Salud---";
+            Escribir "Devoluciones: ";
+            Escribir "Elija el producto a devolver escribiendo el número correspondiente";
+            Escribir "1. Acetaminophen";
+            Escribir "2. Antigripal";
+            Escribir "3. Ibuprofeno";
+            Leer opcion;
+            Limpiar Pantalla;
+            
+            Si opcion=1 Entonces
+                Escribir "Escriba la razón de la devolución: ";
+                Leer devolucion;
+                
+                Limpiar Pantalla;
+                Escribir "Usted devolvió el producto: ",producto1," por la siguiente razón: ",devolucion;
+            FinSi
+            Si opcion=2 Entonces
+                Escribir "Escriba la razón de la devolución: ";
+                Leer devolucion;
+                
+                Limpiar Pantalla;
+                Escribir "Usted devolvió el producto: ",producto2," por la siguiente razón: ",devolucion;
+            FinSi
+            Si opcion=3 Entonces
+                Escribir "Escriba la razón de la devolución: ";
+                Leer devolucion;
+                
+                Limpiar Pantalla;
+                Escribir "Usted devolvió el producto: ",producto3," por la siguiente razón: ",devolucion;
+            FinSi
+    FinSegun
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- Punto 6 -->
+                <div id="T2P6">
+                    <h3>Punto 6</h3>
+                        <h5 type="enunciado">Enunciado: 6. El taller de motos "El Maquinista" recibe motocicletas de alto cilindraje para
+                            realizar las respectivas revisiones y requiere una aplicación que le permita registrar los servicios generados a sus
+                            clientes. Para cada motocicleta se debe tener registro del ingreso al taller y las observaciones por parte del
+                            cliente. También debe existir registro de salida del taller con las novedades y otra de arreglos hechos por el
+                            mecánico en caso de que se requiera inventariar cambios repuestos en la motocicleta al entregarla.</h5>
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_6
+    //Definir variables
+    Definir ingresoTaller Como Caracter;
+    Definir obsCliente Como Caracter;
+    Definir salidaTaller Como Caracter;
+    Definir novedades Como Caracter;
+    Definir arreglosMecanico Como Caracter;
+    
+    //Menu
+    Definir opcion Como Entero;
+    Escribir "---Taller EL MAQUINISTA---";
+    Escribir "Elija una opcion escribiendo el número correspondiente";
+    Escribir "1. Ingresar Motocicleta";
+    Escribir "2. Salida Motocicleta";
+    Leer opcion;
+    Limpiar Pantalla;
+    
+    Segun opcion Hacer
+        1:
+            Escribir "Escriba la fecha de ingreso de la motocicleta (En formato DD/MM/AAAA): ";
+            Leer ingresoTaller;
+            Escribir "Escriba las observaciónes del cliente: ";
+            Leer obsCliente;
+        2:
+            Escribir "Escriba la fecha de salida de la motocicleta(En formato DD/MM/AAAA): ";
+            Leer salidaTaller;
+            Escribir "Escriba las novedades de la motocicleta: ";
+            Leer novedades;
+            Escribir "Escriba los arreglos hechos por el mecánico: ";
+            Leer arreglosMecanico;
+            
+    FinSegun
+    
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- Punto 7 -->
+                <div id="T2P7">
+                    <h3>Punto 7</h3>
+                        <h5 type="enunciado">Enunciado: 7. La Secretaría de Salud Municipal requiere de una aplicación que le permita calcular
+                            el IMC (Índice de masa corporal) y requiere los datos peso en kilogramos y estatura en metros Para cada persona
+                            encuestada adicional a los datos suministrados, debe mostrar el resultado para cada uno y establecer en qué rango se
+                            encuentra (bajo peso, normal, sobrepeso y obeso).</h5>
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_7
+    //definir variables
+    Definir IMC Como Real;
+    Definir masa Como Real;
+    Definir estatura Como Real;
+    
+    //Inicio del proceso 
+    Escribir "---Calculadora de indice de masa corporal IMC---";
+    Escribir "Para esto se solicitaran 2 datos, especificamente peso y estatura";
+    Escribir "Primero ingrese el peso en kilos";
+    Leer masa;
+    Escribir "El segundo dato necesario es la estatura en metros";
+    Leer estatura;
+    
+    //Calculo
+    IMC <- masa/(estatura^2);
+    Escribir "El indice de masa corporal para una persona de ",masa," Kg y ",estatura," m, es de ",IMC;
+    
+    //Condicionales para definir si su peso es normal o es bajo, sobre peso u obesidad
+    Si IMC < 18.5 Entonces
+        Escribir "Se encuentra en bajo peso";
+    FinSi
+    Si IMC >= 18.5 Y IMC <25 Entonces
+        Escribir "Se encuentra en un peso normal";
+    FinSi
+    Si IMC >= 25 Y IMC < 35 Entonces
+        Escribir "Se encuentra en sobre peso";
+    FinSi
+    Si IMC >=35 Entonces
+        Escribir "Se encuentra en estado de obesidad";
+    FinSi
+    
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- Punto 8 -->
+                <div id="T2P8">
+                    <h3>Punto 8</h3>
+                        <h5 type="enunciado">Enunciado: 8. El pastelero Don Carlos es el mejor pastelero de la ciudad y requiere una aplicación
+                            que le permita registrar los pedidos de los clientes en cuanto a las tortas que realiza. Cada torta tiene unas
+                            características propias como sabor, cantidad (porciones) y decoraciones). Se requiere que la aplicación permita
+                            registrar los pedidos, las tortas disponibles y las ventas que se registren diariamente.</h5>
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_8
+    //Definir variables
+    Definir sabor Como Caracter;
+    Definir cantidad Como Entero;
+    Definir decoracion Como Caracter;
+    Definir ventas Como Entero;
+    Definir tortasDisp Como Entero;
+    //inicializar ventas y tortas disponibles ya que no se ha visto el tema de ciclos para guardar estos datos
+    ventas <- 12;
+    tortasDisp <- 33;
+    //menu
+    Definir opcion Como Entero;
+    Escribir "---Pasteles Don carlos---";
+    Escribir "Elija una opcion escribiendo el número correspondiente";
+    Escribir "1. Registrar pedido";
+    Escribir "2. Consultar disponibilidad de tortas";
+    Escribir "3. Consultar ventas del dia";
+    Leer opcion;
+    Limpiar Pantalla;
+    
+    Segun opcion Hacer
+        1: 
+            Escribir "Escriba el sabor de la  torta";
+            Leer sabor;
+            Escribir "Digite el número de porciones de dicha torta";
+            Leer cantidad;
+            Escribir "Escriba las decoraciónes";
+            Leer decoracion;
+            Escribir "Pedido Registrado";
+        2:
+            Escribir "La cantidad de tortas disponibles es: ",tortasDisp;
+        3:
+            Escribir "El número de ventas del día es: ",ventas;
+    FinSegun
+    
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- Punto 9 -->
+                <div id="T2P9">
+                    <h3>Punto 9</h3>
+                        <h5 type="enunciado">Enunciado: 9. El profesor de geometría está explicando a sus estudiantes las fórmulas para calcular
+                            el área de diferentes figuras geométricas, para ello requiere una aplicación que le facilite el ejercicio
+                            solicitándole los valores al estudiante. La aplicación debe permitir que el estudiante seleccione si desea calcular
+                            el área de un rectángulo, triángulo o trapecio. No olvide solicitar los datos necesarios para realizar cada cálculo
+                            y mostrar su respectivo resultado.</h5>
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_9
+    //Definir variables
+    Definir area Como Real;
+    Definir altura Como Real;
+    Definir anchura Como Real;
+    Definir radio Como Real;
+    Definir semiPer Como Real;
+    Definir lado1 Como Real;
+    Definir lado2 Como Real;
+    Definir lado3 Como Real;
+    
+    //menu
+    Definir opcion Como Entero;
+    Escribir "---Calculadora de areas de figuras simples---";
+    Escribir "Digite el número de la opción que desea elegir";
+    Escribir "1. Calcular area de un rectangulo (incluye cuadrados)";
+    Escribir "2. Calcular area de un triángulo";
+    Escribir "3. Calcular area de un circulo";
+    Escribir "4. Calcular area de un trapecio";
+    Leer opcion;
+    Limpiar Pantalla;
+    
+    Segun opcion Hacer
+        1:	//rectangulos
+            Escribir "---Area de un rectangulo--";
+            Escribir "Digite la altura del rectangulo en metros (m)";
+            Leer altura;
+            Escribir "Digite el ancho en metros (m)"; 
+            Leer anchura;
+            Limpiar Pantalla;
+            //cálculo del area
+            area <- altura*anchura;
+            Escribir "El area del rectangulo de altura ",altura," y anchura ",anchura," es: ",area," metros cuadrados (m^2)";		
+        2:	//triangulos
+            Definir opcionT Como Entero;;
+            Escribir "---Area de un triángulo--";
+            Escribir "Dado que hay diferentes tipos de triángulo debe digitar";
+            Escribir "La opción segun el triangulo al que le desea halla el area";
+            Escribir "1. Triángulo equilatero";
+            Escribir "2. Triángulo isósceles";
+            Escribir "3. Triángulo escaleno";
+            Escribir "4. Triángulo rectángulo o base y altura conocidos";
+            Leer opcionT;
+            Limpiar Pantalla;
+            Segun opcionT Hacer
+                1: //Equilatero
+                    Escribir "---Triángulo equilatero---";
+                    Escribir "Digite la longitud de cualquiera de sus lados en metros (m)";
+                    Leer lado1;
+                    Limpiar Pantalla;
+                    //cálculo de area
+                    area <- (raiz(3)/4)*(lado1^2);
+                    Escribir "El area de un triángulo equilatero de lado ",lado1," metros, es: ",area," metros cuadrados (m^2)";
+                2:	//Isósceles
+                    Escribir "---Triángulo isósceles---";
+                    Escribir "Digite la longitud de uno de sus lados iguales en metros (m)";
+                    Leer lado1;
+                    Escribir "Digite la longitud del lado diferente en metros (m)";
+                    Leer lado2;
+                    Limpiar Pantalla;
+                    //cálculo de area
+                    area <- (lado2*(raiz((lado1^2)-(lado2^2)/4)))/2;
+                    Escribir "El area de un triángulo isósceles de lados iguales ",lado1," metros";
+                    Escribir "y de lado diferente ",lado2," metros, es: ",area," metros cuadrados (m^2)";
+                3:	//Escaleno
+                    Escribir "---Triángulo Escaleno---";
+                    Escribir "Digite la longitud del primero de sus lados en metros (m)";
+                    Leer lado1;
+                    Escribir "Digite la longitud del segundo de sus lados en metros (m)";
+                    Leer lado2;
+                    Escribir "Digite la longitud del tercero de sus lados en metros (m)";
+                    Leer lado3;
+                    Limpiar Pantalla;
+                    //cálculo de area
+                    semiPer <- (lado1+lado2+lado3)/2;
+                    area <- raiz(semiPer*(semiPer-lado1)*(semiPer-lado2)*(semiPer-lado3));
+                    Escribir "El area de un triángulo escaleno de lado 1: ",lado1," metros";
+                    Escribir ", de lado 2: ",lado2," y lado 3: ",lado3," metros, es: ",area," metros cuadrados (m^2)";
+                4:	//rectangulo o base y altura
+                    Escribir "---Triángulo Rectángulo o con base y altura conocidos---";
+                    Escribir "Digite la longitud su base en metros (m)";
+                    Leer lado1;
+                    Escribir "Digite la longitud su altura en metros (m)";
+                    Leer lado2;
+                    //cálculo de area
+                    area <- (lado1*lado2)/2;
+                    Escribir "El area de un triángulo con base ",lado1," y altura ",lado2," es: ",area," metros cuadrados (m^2)";
+            FinSegun
+        3:	//Circulo
+            Escribir "---Area de un circulo---";
+            Escribir "Digite el radio del circulo en metros (m)";
+            Leer radio;
+            //cálculo del area
+            area <- PI*(radio^2);
+            Escribir "El area del circulo de radio ",radio," es: ",area," metros cuadrados (m^2)";
+        4: //Trapecio
+            Escribir "---Area de un trapecio---";
+            Escribir "Digite la base mas ancha en metros (m)";
+            leer anchura;
+            Escribir "Digite la base pequeña en metros (m)";
+            leer lado2;
+            Escribir "Digite la altura del trapecio en metros (m)";
+            leer altura;
+            area <- ((anchura + lado2)*altura)/2;
+            Escribir "El area de un trapecio con lado ancho de ",anchura," lado pequeño de ",lado2," y altura ",altura," es de: ",area," metros cuadrados (m^2)";
+            
+    FinSegun
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- Punto 10 -->
+                <div id="T2P10">
+                    <h3>Punto 10</h3>
+                    <h5 type="enunciado">Enunciado: 10. El banco "Su banco fiel" es un banco que inicia sus actividades financieras y
+                        necesita una aplicación para llevar las cuentas de sus usuarios; por lo tanto, se sugiere que la cuenta tenga los
+                        atributos titular y cantidad. Para cada cliente las cuentas permitirán realizar ingresos, retiros o consultas de
+                        valor. En los ingresos no se pueden insertar valores negativos y para los retiros el valor no puede ser mayor al
+                        valor que tiene en la cuenta.</h5>
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_10
+    //Definir variables
+    Definir usuario1 Como Caracter;
+    Definir usuario2 Como Caracter;
+    Definir usuario3 Como Caracter;
+    
+    Definir cantidadU1 Como Real;
+    Definir cantidadU2 Como Real;
+    Definir cantidadU3 Como Real;
+    
+    Definir ingresaRetira Como Real;
+    //Inicializar variables
+    usuario1 <- "Nicolas";
+    usuario2 <- "Jonathan";
+    usuario3 <- "María";
+    
+    cantidadU1 <- 350500;
+    cantidadU2 <- 1300000;
+    cantidadU3 <- 10000000;
+    
+    //menu
+    Definir  opcion Como Entero;
+    Escribir "---Su banco fiel---";
+    Escribir "Digite el número correspondiente a la opción";
+    Escribir "1. Consultar cuenta";
+    Escribir "2. Realizar un ingreso de dinero";
+    Escribir "3. Realizar un retiro de dinero";
+    Leer opcion;
+    Limpiar Pantalla;
+    
+    Segun opcion Hacer
+        1:	//Consulta
+            Escribir "Elija el usuario que desea consultar";
+            Escribir "1. ",usuario1;
+            Escribir "2. ",usuario2;
+            Escribir "3. ",usuario3;
+            Leer opcion;
+            Limpiar Pantalla;
+            
+            Segun opcion Hacer
+                1:
+                    Escribir usuario1;
+                    Escribir "Cuenta con ",cantidadU1," actualmente en su cuenta";
+                2:
+                    Escribir usuario2;
+                    Escribir "Cuenta con ",cantidadU2," actualmente en su cuenta";
+                3:
+                    Escribir usuario3;
+                    Escribir "Cuenta con ",cantidadU3," actualmente en su cuenta";
+            FinSegun
+        2:// Ingresar dinero
+            Escribir "Elija el usuario que desea ingresar dinero";
+            Escribir "1. ",usuario1;
+            Escribir "2. ",usuario2;
+            Escribir "3. ",usuario3;
+            Leer opcion;
+            Limpiar Pantalla;
+            
+            Segun opcion Hacer
+                1:
+                    Escribir usuario1;
+                    Escribir "Escriba la cantidad a ingresar";
+                    Leer ingresaRetira;
+                    Si ingresaRetira > 0 Entonces
+                        cantidadU1 <- cantidadU1+ingresaRetira;
+                        Escribir "Ingresó: ",ingresaRetira;
+                        Escribir "Saldo final despues de la operación: ",cantidadU1;
+                    SiNo
+                        Escribir "El valor ingresado es incorrecto";
+                    FinSi
+                    
+                2:
+                    Escribir usuario2;
+                    Escribir "Escriba la cantidad a ingresar";
+                    Leer ingresaRetira;
+                    Si ingresaRetira > 0 Entonces
+                        cantidadU2 <- cantidadU2+ingresaRetira;
+                        Escribir "Ingresó: ",ingresaRetira;
+                        Escribir "Saldo final despues de la operación: ",cantidadU2;
+                    SiNo
+                        Escribir "El valor ingresado es incorrecto";
+                    FinSi
+                    
+                3:
+                    Escribir usuario3;
+                    Escribir "Escriba la cantidad a ingresar";
+                    Leer ingresaRetira;
+                    Si ingresaRetira > 0 Entonces
+                        cantidadU3 <- cantidadU3+ingresaRetira;
+                        Escribir "Ingresó: ",ingresaRetira;
+                        Escribir "Saldo final despues de la operación: ",cantidadU3;
+                    SiNo
+                        Escribir "El valor ingresado es incorrecto";
+                    FinSi
+                    
+            FinSegun
+        3:	//Retiro
+            Escribir "Elija el usuario que desea retirar dinero";
+            Escribir "1. ",usuario1;
+            Escribir "2. ",usuario2;
+            Escribir "3. ",usuario3;
+            Leer opcion;
+            Limpiar Pantalla;
+            
+            Segun opcion Hacer
+                1:
+                    Escribir usuario1;
+                    Escribir "Escriba la cantidad a retirar";
+                    Leer ingresaRetira;
+                    Si ingresaRetira > 0 Y ingresaRetira <= cantidadU1 Entonces
+                        cantidadU1 <- cantidadU1-ingresaRetira;
+                        Escribir "Retiró: ",ingresaRetira;
+                        Escribir "Saldo final despues de la operación: ",cantidadU1;
+                    SiNo
+                        Escribir "El valor ingresado es incorrecto o es mayor al que se tiene en la cuenta";
+                    FinSi
+                2:
+                    Escribir usuario2;
+                    Escribir "Escriba la cantidad a retirar";
+                    Leer ingresaRetira;
+                    Si ingresaRetira > 0 Y ingresaRetira <= cantidadU2 Entonces
+                        cantidadU2 <- cantidadU2-ingresaRetira;
+                        Escribir "Retiró: ",ingresaRetira;
+                        Escribir "Saldo final despues de la operación: ",cantidadU2;
+                    SiNo
+                        Escribir "El valor ingresado es incorrecto o es mayor al que se tiene en la cuenta";
+                    FinSi
+                    
+                3:
+                    Escribir usuario3;
+                    Escribir "Escriba la cantidad a retirar";
+                    Leer ingresaRetira;
+                    Si ingresaRetira > 0 Y ingresaRetira <= cantidadU3 Entonces
+                        cantidadU3 <- cantidadU3-ingresaRetira;
+                        Escribir "Retiró: ",ingresaRetira;
+                        Escribir "Saldo final despues de la operación: ",cantidadU3;
+                    SiNo
+                        Escribir "El valor ingresado es incorrecto o es mayor al que se tiene en la cuenta";
+                    FinSi
+            FinSegun
+    FinSegun
+    
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+            </div>
+            <!-- Taller 3 -->
+            <button class="acordeon">Taller 3</button>
+            <div class=" panel">
+                <!-- Punto 1 -->
+                <div id="T3P1">
+                    <h3>Punto 1</h3>
+                    <h5 type="enunciado">Enunciado: 1. Realizar la siguiente figura por medio del ciclo <b>Para</b></h5>
+                    <img src="./img/punto1T3.png">
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_1
+    //Definir variables
+    Definir i Como Entero;
+    Definir j Como Entero;
+    //ciclo anidado para imprimir los *
+    Para i <- 1 Hasta 10 Con Paso 1 Hacer
+        Para j <- 1 Hasta i Con Paso 1 Hacer
+            Escribir Sin Saltar "*";
+        FinPara
+        Escribir "";
+    FinPara
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- Punto 2 -->
+                <div id="T3P2">
+                    <h3>Punto 2</h3>
+                    <h5 type="enunciado">Enunciado: 2. Realizar la siguiente figura por medio del ciclo <b>Mientras - Hacer</b></h5>
+                    <img src="./img/punto2T3.png">
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_2
+    //Definir variables
+    Definir i Como Entero;
+    Definir j Como Entero;
+    Definir h Como Entero;
+    i <- 2;
+    //ciclo anidado para imprimir los *
+    Mientras i < 12 Hacer
+        j <- 11;
+        h <- 1;
+        Mientras j > i Hacer
+            Escribir Sin Saltar " ";
+            j <- j - 1;
+        FinMientras
+        Mientras h < i Hacer
+            Escribir Sin Saltar "*";
+            h <- h + 1;
+        FinMientras
+        Escribir "";
+        i <- i + 1;
+    FinMientras
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- Punto 3 -->
+                <div id="T3P3">
+                    <h3>Punto 3</h3>
+                    <h5 type="enunciado">Enunciado: 3. Realizar la siguiente figura por medio del ciclo Repetir - <b>Hasta Que</b></h5>
+                    <img src="./img/punto3T3.png">
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_3
+    //Definir variables
+    Definir i Como Entero;
+    Definir j Como Entero;
+    Definir h Como Entero;
+    i <- 1;
+    //Ciclos
+    
+    //parte 1 la piramide
+    Repetir
+        j <- 0;
+        h <- 23;
+        
+        Repetir
+            Escribir Sin Saltar " ";
+            h <- h - 2;
+        Hasta Que h = i;
+        Repetir
+            Escribir Sin Saltar "*";
+            j <- j + 1;
+        Hasta Que j = i;
+        
+        Escribir "";
+        i <- i + 2;
+    Hasta Que i = 23;
+    
+    
+    //parte 2 el tronco
+    i <- 3;
+    j <- 0;
+    h <- 11;
+    Repetir
+        Escribir Sin Saltar " ";
+        h <- h - 1;
+    Hasta Que h = 1;
+    Repetir
+        Escribir Sin Saltar "*";
+        j <- j + 1;
+    Hasta Que j=3;
+    Escribir "";
+    Repetir
+        j <- 0;
+        h <- 23;
+        Repetir
+            Escribir Sin Saltar " ";
+            h <- h - 2;
+        Hasta Que h = i;
+        Repetir
+            Escribir Sin Saltar "*";
+            j <- j + 1;
+        Hasta Que j=i;
+        Escribir "";
+        i <- i + 2;
+    Hasta Que i = 9;
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- Punto 4 -->
+                <div id="T3P4">
+                    <h3>Punto 4</h3>
+                    <h5 type="enunciado">Enunciado: 4. Se requiere un programa que pueda crear la tabla de multiplicar del número que el
+                        usuario indique por medio del ciclo <b>Para</b>; esta debe ser impresa del 1 al 10. Ejemplo, si el usuario indica que desea
+                        crear la tabla del 5, entonces el resultado debería ser el siguiente:</h5>
+                    <img src="./img/punto4T3.png">
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_4
+    // Tabla de multiplicar
+    Definir i Como Entero;
+    Definir num Como Entero;
+    Definir res Como Entero;
+    
+    Escribir "---Tabla de multiplicar---";
+    Escribir "Digite el número del cual desea conocer su tabla de multiplicar";
+    Leer num;
+    Limpiar Pantalla;
+    
+    Para i <- 1 Hasta 10 Con Paso 1 Hacer
+        res <- num * i;
+        Escribir i," x ",num," = ",res;
+    FinPara
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- Punto 5 -->
+                <div id="T3P5">
+                    <h3>Punto 5</h3>
+                    <h5 type="enunciado">Enunciado: 5. Utilizando el ciclo que usted desee, crear un menú de ejecución infinita hasta que el
+                        usuario desee terminar dicho ciclo.</h5>
+                    <img src="./img/punto5T3.png">
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_5
+    Definir opcion Como Entero;
+    Definir nombre Como Caracter;
+    Definir hayNombre como Logico;
+    hayNombre <- Falso;
+    Repetir
+        Escribir "--- Menú de usuario---";
+        Escribir "1. Captura de nombre";
+        Escribir "2. Saludad persona";
+        Escribir "3. Salir del sistema";
+        Leer opcion;
+        Limpiar Pantalla;
+        
+        Segun opcion hacer
+            1:
+                Escribir "Digite su nombre";
+                Leer nombre;
+                hayNombre <- Verdadero;
+            2:
+                Si hayNombre Entonces
+                    Escribir "Hola ",nombre," espero se encuentre muy bien";
+                    Escribir "";
+                SiNo
+                    Escribir "Debe ingresar su nombre en la opción 1 ";
+                    Escribir "del menú antes de poder usar la opción 2";
+                FinSi
+        FinSegun
+    Hasta Que opcion = 3;
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- Punto 6 -->
+                <div id="T3P6">
+                    <h3>Punto 6</h3>
+                    <h5 type="enunciado">Enunciado: 6. Se está creando una aplicación que va a estar conectada con un prototipo que permita
+                        almacenar contactos telefónicos en el dispositivo. Para ello cada contacto debe contener nombre completo, teléfono y
+                        organización. Se requiere que la aplicación permita añadir 3 contactos verificando que el número no esté almacenado,
+                        buscar contactos almacenados y eliminar contactos si el usuario lo requiere. Recuerde que el sistema debe terminar
+                        cuando el usuario así lo indique.</h5>
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_6 
+    //Definir variables
+    Definir usuario1 Como Caracter;
+    Definir usuario2 Como Caracter;
+    Definir usuario3 Como Caracter;
+    Definir org1 Como Caracter;
+    Definir org2 Como Caracter;
+    Definir org3 Como Caracter;
+    Definir tel1 Como Entero;
+    Definir tel2 Como Entero;
+    Definir tel3 Como Entero;
+    
+    Definir salir Como Caracter;
+    
+    Definir usuarios Como Entero;
+    usuarios <- 0;
+    Definir opcion Como Entero;
+    opcion <- 0;
+    
+    //Ciclo del menú 
+    Repetir
+        Escribir "--- Menú de usuario---";
+        Escribir "1. Añadir contacto";
+        Escribir "2. Consultar contactos";
+        Escribir "3. Eliminar contactos";
+        Escribir "4. Salir del sistema";
+        Leer opcion;
+        Limpiar Pantalla;
+        
+        Segun opcion Hacer
+            1:	//Agregar contactos
+                Si usuarios = 3 Entonces
+                    Escribir "Su libreta de contactos está llena, no se pueden agregar más contactos";
+                FinSi
+                
+                Si usuarios = 2 Entonces
+                    
+                    Escribir "Escriba el nombre del contacto";
+                    Leer usuario3;
+                    Si usuario3 = usuario1 o  usuario3 = usuario2 Entonces
+                        Escribir "El contacto de nombre: ",usuario3," ya existe";
+                        usuario3 <- "";
+                    SiNo
+                        Escribir "Digite el número de teléfono del contacto";
+                        Leer tel3;
+                        Si tel3 = tel1 o tel3 = tel2 Entonces
+                            Escribir "El contacto de teléfono: ",tel3," ya existe";
+                        SiNo
+                            Escribir "Escriba la organización del contacto";
+                            Leer org3;
+                            usuarios <- 3;
+                            Escribir "Contacto agregado";
+                        FinSi
+                    FinSi
+                    
+                FinSi
+                
+                Si usuarios = 1 Entonces
+                    
+                    Escribir "Escriba el nombre del contacto";
+                    Leer usuario2;
+                    Si usuario2 = usuario1 Entonces
+                        Escribir "El contacto de nombre: ",usuario2," ya existe";
+                    SiNo
+                        Escribir "Digite el número de teléfono del contacto";
+                        Leer tel2;
+                        Si tel2 = tel1 Entonces
+                            Escribir "El contacto de teléfono: ",tel2," ya existe";
+                        SiNo
+                            Escribir "Escriba la organización del contacto";
+                            Leer org2;
+                            usuarios <- 2;
+                            Escribir "Contacto agregado";
+                        FinSi
+                    FinSi
+                FinSi
+                
+                Si usuarios = 0 Entonces
+                    Escribir "Escriba el nombre del contacto";
+                    Leer usuario1;
+                    Escribir "Digite el número de teléfono del contacto";
+                    Leer tel1;
+                    Escribir "Escriba la organización del contacto";
+                    Leer org1;
+                    usuarios <- 1;
+                    Escribir "Contacto agregado";
+                FinSi
+                
+                Escribir "Presione enter para salir";
+                Leer salir;
+                Limpiar Pantalla;
+                
+            2:	//Consulta de contactos
+                Si usuarios = 0 Entonces
+                    Escribir "No hay contactos que visualizar";
+                FinSi
+                Si usuarios = 1 Entonces
+                    Escribir "Contacto ",usuarios;
+                    Escribir "Nombre: ",usuario1;
+                    Escribir "Telefono: ",tel1;
+                    Escribir "Organización: ",org1;
+                    Escribir "-------------------------";
+                FinSi
+                Si usuarios = 2 Entonces
+                    Escribir "Contacto ",usuarios-1;
+                    Escribir "Nombre: ",usuario1;
+                    Escribir "Telefono: ",tel1;
+                    Escribir "Organización: ",org1;
+                    Escribir "-------------------------";
+                    Escribir "Contacto ",usuarios;
+                    Escribir "Nombre: ",usuario2;
+                    Escribir "Telefono: ",tel2;
+                    Escribir "Organización: ",org2;
+                    Escribir "-------------------------";
+                FinSi
+                Si usuarios = 3 Entonces 
+                    Escribir "Contacto ",usuarios-2;
+                    Escribir "Nombre: ",usuario1;
+                    Escribir "Telefono: ",tel1;
+                    Escribir "Organización: ",org1;
+                    Escribir "-------------------------";
+                    Escribir "Contacto ",usuarios-1;
+                    Escribir "Nombre: ",usuario2;
+                    Escribir "Telefono: ",tel2;
+                    Escribir "Organización: ",org2;
+                    Escribir "-------------------------";
+                    Escribir "Contacto ",usuarios;
+                    Escribir "Nombre: ",usuario3;
+                    Escribir "Telefono: ",tel3;
+                    Escribir "Organización: ",org3;
+                    Escribir "-------------------------";
+                FinSi
+                
+                Escribir "Presione enter para salir";
+                Leer salir;
+                Limpiar Pantalla;
+            3: 
+                //Eliminar usuarios
+                Si usuarios = 0 Entonces
+                    Escribir "No tiene contactos guardados";
+                FinSi
+                Si usuarios = 1 Entonces
+                    usuarios <- 0;
+                    Escribir "Contacto eliminado";
+                FinSi
+                Si usuarios = 2 Entonces
+                    Escribir "Cual de los contactos desea eliminar";
+                    Escribir "1. Contacto 1 :",usuario1,", Telefono: ",tel1, ",Organización: ",org1;
+                    Escribir "2. Contacto 2 :",usuario2,", Telefono: ",tel2, ",Organización: ",org2;
+                    Leer opcion;
+                    Limpiar Pantalla;
+                    
+                    Segun opcion Hacer
+                        1: 
+                            usuarios <- 1;
+                            
+                            usuario1 <- usuario2;
+                            tel1 <- tel2;
+                            org1 <- org2;
+                            
+                            usuario2 <- "";
+                            tel2 <- 0;
+                            org2 <- "";
+                            Escribir "Contacto eliminado";
+                        2:
+                            usuarios <- 1;
+                            usuario2 <- "";
+                            tel2 <- 0;
+                            org2 <- "";
+                            Escribir "Contacto eliminado";
+                    FinSegun
+                FinSi
+                Si usuarios = 3 Entonces
+                    Escribir "Cual de los contactos desea eliminar";
+                    Escribir "1. Contacto 1 :",usuario1,", Telefono: ",tel1, ",Organización: ",org1;
+                    Escribir "2. Contacto 2 :",usuario2,", Telefono: ",tel2, ",Organización: ",org2;
+                    Escribir "3. Contacto 3 :",usuario3,", Telefono: ",tel3, ",Organización: ",org3;
+                    Leer opcion;
+                    Segun opcion Hacer
+                        1: 
+                            usuarios <- 2;
+                            
+                            usuario1 <- usuario2;
+                            tel1 <- tel2;
+                            org1 <- org2;
+                            
+                            usuario2 <- usuario3;
+                            tel2 <- tel3;
+                            org2 <- org3;
+                            
+                            usuario3 <- "";
+                            tel3 <- 0;
+                            org3 <- "";
+                            Escribir "Contacto eliminado";
+                        2:
+                            usuarios <- 2;
+                            
+                            usuario2 <- usuario3;
+                            tel2 <- tel3;
+                            org2 <- org3;
+                            
+                            usuario3 <- "";
+                            tel3 <- 0;
+                            org3 <- "";
+                            Escribir "Contacto eliminado";
+                        3:
+                            usuarios <- 2;
+                            
+                            usuario3 <- "";
+                            tel3 <- 0;
+                            org3 <- "";
+                            Escribir "Contacto eliminado";
+                    FinSegun
+                FinSi
+                
+                Escribir "Presione enter para salir";
+                Leer salir;
+                Limpiar Pantalla;
+        FinSegun
+    Hasta Que opcion <> 1 y opcion <> 2 y opcion <> 3;
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- Punto 7 -->
+                <div id="T3P7">
+                    <h3>Punto 7</h3>
+                    <h5 type="enunciado">Enunciado: 7. El parqueadero "El guardián" presta sus servicios de parqueadero nocturno para los
+                        usuarios del barrio y requiere una aplicación que permita registrar los vehículos que se cuidan en estas
+                        instalaciones. Se sugiere que el parqueadero tenga los atributos del vehículo como son, placa y marca, y los datos
+                        del cliente como son nombre completo y número de teléfono. Para cada vehículo se debe permitir la opción de ingresar
+                        al parqueadero, retirar del parqueadero y consultar si un vehículo se encuentra en el parqueadero. Recuerde que el
+                        sistema debe terminar cuando el usuario así lo indique. Tenga en presente que el parqueadero solo puede almacenar
+                        máximo 5 vehículos.</h5>
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_7
+    //definir variables
+    Definir placa1 Como Caracter;
+    Definir placa2 Como Caracter;
+    Definir placa3 Como Caracter;
+    Definir placa4 Como Caracter;
+    Definir placa5 Como Caracter;
+    placa1 <- "";
+    placa2 <- "";
+    placa3 <- "";
+    placa4 <- "";
+    placa5 <- "";
+    
+    Definir marca1 Como Caracter;
+    Definir marca2 Como Caracter;
+    Definir marca3 Como Caracter;
+    Definir marca4 Como Caracter;
+    Definir marca5 Como Caracter;
+    
+    Definir owner1 Como Caracter;
+    Definir owner2 Como Caracter;
+    Definir owner3 Como Caracter;
+    Definir owner4 Como Caracter;
+    Definir owner5 Como Caracter;
+    
+    Definir tel1 Como Caracter;
+    Definir tel2 Como Caracter;
+    Definir tel3 Como Caracter;
+    Definir tel4 Como Caracter;
+    Definir tel5 Como Caracter;
+    
+    Definir cantidad Como Entero;
+    cantidad <- 1;
+    
+    Definir opcion Como Entero;
+    Definir salir Como Caracter;
+    Definir placaComp Como Caracter;
+    //Menu inicial
+    Repetir
+        Escribir "---El Guardián---";
+        Escribir "1. Ingresar vehículo";
+        Escribir "2. Consultar vehículo";
+        Escribir "3. Retirar vehículo";
+        Escribir "4. Salir del sistema";
+        Leer opcion;
+        Limpiar Pantalla;
+        
+        Segun opcion Hacer
+            1://Ingresar vehículos
+                Si cantidad <= 5 Entonces
+                    Segun cantidad Hacer
+                        1:
+                            Escribir "---Datos del vehículo---";
+                            Escribir "Ingrese la placa del vehículo";
+                            Leer placa1;
+                            Si placa1 <> placa2 Y placa1 <> placa3 Y placa1 <> placa4 Y placa1 <> placa5 Entonces
+                                Escribir "Ingrese la marca del vehículo";
+                                Leer marca1;
+                                Escribir "Ingrese el nombre del propietario";
+                                Leer owner1;
+                                Escribir "Ingrese el teléfono de contacto del propietario";
+                                Leer tel1;
+                                Escribir "Vehículo registrado";
+                                cantidad <- 2;
+                            SiNo
+                                Escribir "El vehículo ya está registrado";
+                            FinSi
+                        2:
+                            Escribir "---Datos del vehículo---";
+                            Escribir "Ingrese la placa del vehículo";
+                            Leer placa2;
+                            Si placa2 <> placa1 Y placa2 <> placa3 Y placa2 <> placa4 Y placa2 <> placa5 Entonces
+                                Escribir "Ingrese la marca del vehículo";
+                                Leer marca2;
+                                Escribir "Ingrese el nombre del propietario";
+                                Leer owner2;
+                                Escribir "Ingrese el teléfono de contacto del propietario";
+                                Leer tel2;
+                                Escribir "Vehículo registrado";
+                                cantidad <- 3;
+                            SiNo
+                                Escribir "El vehículo ya está registrado";
+                            FinSi
+                        3:
+                            Escribir "---Datos del vehículo---";
+                            Escribir "Ingrese la placa del vehículo";
+                            Leer placa3;
+                            Si placa3 <> placa2 Y placa3 <> placa1 Y placa3 <> placa4 Y placa3 <> placa5 Entonces
+                                Escribir "Ingrese la marca del vehículo";
+                                Leer marca3;
+                                Escribir "Ingrese el nombre del propietario";
+                                Leer owner3;
+                                Escribir "Ingrese el teléfono de contacto del propietario";
+                                Leer tel3;
+                                Escribir "Vehículo registrado";
+                                cantidad <- 4;
+                            SiNo
+                                Escribir "El vehículo ya está registrado";
+                            FinSi
+                        4:
+                            Escribir "---Datos del vehículo---";
+                            Escribir "Ingrese la placa del vehículo";
+                            Leer placa4;
+                            Si placa4 <> placa2 Y placa4 <> placa3 Y placa4 <> placa1 Y placa4 <> placa5 Entonces
+                                Escribir "Ingrese la marca del vehículo";
+                                Leer marca4;
+                                Escribir "Ingrese el nombre del propietario";
+                                Leer owner4;
+                                Escribir "Ingrese el teléfono de contacto del propietario";
+                                Leer tel4;
+                                Escribir "Vehículo registrado";
+                                cantidad <- 5;
+                            SiNo
+                                Escribir "El vehículo ya está registrado";
+                            FinSi
+                        5:
+                            Escribir "---Datos del vehículo---";
+                            Escribir "Ingrese la placa del vehículo";
+                            Leer placa5;
+                            Si placa5 <> placa2 Y placa5 <> placa3 Y placa5 <> placa4 Y placa5 <> placa1 Entonces
+                                Escribir "Ingrese la marca del vehículo";
+                                Leer marca5;
+                                Escribir "Ingrese el nombre del propietario";
+                                Leer owner5;
+                                Escribir "Ingrese el teléfono de contacto del propietario";
+                                Leer tel5;
+                                Escribir "Vehículo registrado";
+                                cantidad <- 6;
+                            SiNo
+                                Escribir "El vehículo ya está registrado";
+                            FinSi
+                            
+                    FinSegun
+                SiNo
+                    Escribir "El parqueadero se encuentra lleno, no puede ingresar más vehiculos";
+                FinSi
+                Escribir "Presione enter para salir";
+                Leer salir;
+                Limpiar Pantalla;
+            2://Consultar vehiculos
+                Si cantidad > 1 Y cantidad <= 6 Entonces
+                    Escribir "Esciba la placa del vehículo que desea consultar";
+                    Leer placaComp;
+                    Segun cantidad Hacer
+                        2:
+                            Si placaComp = placa1 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," se encuentra ";
+                                Escribir "en la posición: ",cantidad-1;
+                                Escribir "Marca: ", marca1;
+                                Escribir "Propietario: ",owner1;
+                                Escribir "Teléfono de contacto: ",tel1;
+                            SiNo
+                                Escribir "El vehículo de placa: ",placaComp," no se encuentra ";
+                                Escribir "en nuestras instalaciónes";
+                            FinSi
+                        3:
+                            Si placaComp = placa1 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," se encuentra ";
+                                Escribir "en la posición: 1";
+                                Escribir "Marca: ", marca1;
+                                Escribir "Propietario: ",owner1;
+                                Escribir "Teléfono de contacto: ",tel1;
+                            FinSi
+                            Si placaComp = placa2 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," se encuentra ";
+                                Escribir "en la posición: 2";
+                                Escribir "Marca: ", marca2;
+                                Escribir "Propietario: ",owner2;
+                                Escribir "Teléfono de contacto: ",tel2;
+                            FinSi
+                            Si placaComp <> placa1 Y placaComp <> placa2 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," no se encuentra ";
+                                Escribir "en nuestras instalaciónes";
+                            FinSi
+                        4:
+                            Si placaComp = placa1 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," se encuentra ";
+                                Escribir "en la posición: 1";
+                                Escribir "Marca: ", marca1;
+                                Escribir "Propietario: ",owner1;
+                                Escribir "Teléfono de contacto: ",tel1;
+                            FinSi
+                            Si placaComp = placa2 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," se encuentra ";
+                                Escribir "en la posición: 2";
+                                Escribir "Marca: ", marca2;
+                                Escribir "Propietario: ",owner2;
+                                Escribir "Teléfono de contacto: ",tel2;
+                            FinSi
+                            Si placaComp = placa3 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," se encuentra ";
+                                Escribir "en la posición: 3";
+                                Escribir "Marca: ", marca3;
+                                Escribir "Propietario: ",owner3;
+                                Escribir "Teléfono de contacto: ",tel3;
+                            FinSi
+                            Si placaComp <> placa1 Y placaComp <> placa2 Y placaComp <> placa3 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," no se encuentra ";
+                                Escribir "en nuestras instalaciónes";
+                            FinSi
+                        5:
+                            Si placaComp = placa1 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," se encuentra ";
+                                Escribir "en la posición: 1";
+                                Escribir "Marca: ", marca1;
+                                Escribir "Propietario: ",owner1;
+                                Escribir "Teléfono de contacto: ",tel1;
+                            FinSi
+                            Si placaComp = placa2 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," se encuentra ";
+                                Escribir "en la posición: 2";
+                                Escribir "Marca: ", marca2;
+                                Escribir "Propietario: ",owner2;
+                                Escribir "Teléfono de contacto: ",tel2;
+                            FinSi
+                            Si placaComp = placa3 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," se encuentra ";
+                                Escribir "en la posición: 3";
+                                Escribir "Marca: ", marca3;
+                                Escribir "Propietario: ",owner3;
+                                Escribir "Teléfono de contacto: ",tel3;
+                            FinSi
+                            Si placaComp = placa4 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," se encuentra ";
+                                Escribir "en la posición: 4";
+                                Escribir "Marca: ", marca4;
+                                Escribir "Propietario: ",owner4;
+                                Escribir "Teléfono de contacto: ",tel4;
+                            FinSi
+                            Si placaComp <> placa1 Y placaComp <> placa2 Y placaComp <> placa3 Y placaComp <> placa4 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," no se encuentra ";
+                                Escribir "en nuestras instalaciónes";
+                            FinSi
+                        6:	
+                            Si placaComp = placa1 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," se encuentra ";
+                                Escribir "en la posición: 1";
+                                Escribir "Marca: ", marca1;
+                                Escribir "Propietario: ",owner1;
+                                Escribir "Teléfono de contacto: ",tel1;
+                            FinSi
+                            Si placaComp = placa2 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," se encuentra ";
+                                Escribir "en la posición: 2";
+                                Escribir "Marca: ", marca2;
+                                Escribir "Propietario: ",owner2;
+                                Escribir "Teléfono de contacto: ",tel2;
+                            FinSi
+                            Si placaComp = placa3 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," se encuentra ";
+                                Escribir "en la posición: 3";
+                                Escribir "Marca: ", marca3;
+                                Escribir "Propietario: ",owner3;
+                                Escribir "Teléfono de contacto: ",tel3;
+                            FinSi
+                            Si placaComp = placa4 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," se encuentra ";
+                                Escribir "en la posición: 4";
+                                Escribir "Marca: ", marca4;
+                                Escribir "Propietario: ",owner4;
+                                Escribir "Teléfono de contacto: ",tel4;
+                            FinSi
+                            Si placaComp = placa5 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," se encuentra ";
+                                Escribir "en la posición: 5";
+                                Escribir "Marca: ", marca5;
+                                Escribir "Propietario: ",owner5;
+                                Escribir "Teléfono de contacto: ",tel5;
+                            FinSi
+                            Si placaComp <> placa1 Y placaComp <> placa2 Y placaComp <> placa3 Y placaComp <> placa4 Y placaComp <> placa5 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," no se encuentra ";
+                                Escribir "en nuestras instalaciónes";
+                            FinSi
+                    FinSegun
+                SiNo
+                    Escribir "No hay vehículos registrados";
+                FinSi
+                Escribir "Presione enter para salir";
+                Leer salir;
+                Limpiar Pantalla;
+            3://Retirar vehículos
+                Si cantidad > 1 Y cantidad <= 6 Entonces
+                    Escribir "Esciba la placa del vehículo que desea retirar";
+                    Leer placaComp;
+                    Segun cantidad Hacer
+                        2:
+                            Si placaComp = placa1 Entonces
+                                Escribir "El vehículo de placa: ",placaComp;
+                                Escribir "Marca: ", marca1;
+                                Escribir "Propietario: ",owner1;
+                                Escribir "Teléfono de contacto: ",tel1;
+                                Escribir "Ha sido retirado";
+                                cantidad <- cantidad -1;
+                                placa1 <- "";
+                            SiNo
+                                Escribir "El vehículo de placa: ",placaComp," no se encuentra ";
+                                Escribir "en nuestras instalaciónes";
+                            FinSi
+                        3:
+                            Si placaComp = placa1 Entonces
+                                Escribir "El vehículo de placa: ",placaComp;
+                                Escribir "Marca: ", marca1;
+                                Escribir "Propietario: ",owner1;
+                                Escribir "Teléfono de contacto: ",tel1;
+                                Escribir "Ha sido retirado";
+                                cantidad <- cantidad -1;
+                                placa1 <- placa2;
+                                marca1 <- marca2;
+                                owner1 <- owner2;
+                                tel1 <- tel2;
+                                placa2 <- "";
+                            FinSi
+                            Si placaComp = placa2 Entonces
+                                Escribir "El vehículo de placa: ",placaComp;
+                                Escribir "Marca: ", marca2;
+                                Escribir "Propietario: ",owner2;
+                                Escribir "Teléfono de contacto: ",tel2;
+                                Escribir "Ha sido retirado";
+                                cantidad <- cantidad -1;
+                            FinSi
+                            Si placaComp <> placa1 Y placaComp <> placa2 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," no se encuentra ";
+                                Escribir "en nuestras instalaciónes";
+                            FinSi
+                        4:
+                            Si placaComp = placa1 Entonces
+                                Escribir "El vehículo de placa: ",placaComp;
+                                Escribir "Marca: ", marca1;
+                                Escribir "Propietario: ",owner1;
+                                Escribir "Teléfono de contacto: ",tel1;
+                                Escribir "Ha sido retirado";
+                                cantidad <- cantidad -1;
+                                placa1 <- placa2;
+                                marca1 <- marca2;
+                                owner1 <- owner2;
+                                tel1 <- tel2;
+                                placa2 <- placa3;
+                                marca2 <- marca3;
+                                owner2 <- owner3;
+                                tel2 <- tel3;
+                                placa3 <- "";
+                            FinSi
+                            Si placaComp = placa2 Entonces
+                                Escribir "El vehículo de placa: ",placaComp;
+                                Escribir "Marca: ", marca2;
+                                Escribir "Propietario: ",owner2;
+                                Escribir "Teléfono de contacto: ",tel2;
+                                Escribir "Ha sido retirado";
+                                placa2 <- placa3;
+                                marca2 <- marca3;
+                                owner2 <- owner3;
+                                tel2 <- tel3;
+                                placa3 <- "";
+                            FinSi
+                            Si placaComp = placa3 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," se encuentra ";
+                                Escribir "en la posición: 3";
+                                Escribir "Marca: ", marca3;
+                                Escribir "Propietario: ",owner3;
+                                Escribir "Teléfono de contacto: ",tel3;
+                                Escribir "Ha sido retirado";
+                                cantidad <- cantidad -1;
+                                placa3 <- "";
+                            FinSi
+                            Si placaComp <> placa1 Y placaComp <> placa2 Y placaComp <> placa3 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," no se encuentra ";
+                                Escribir "en nuestras instalaciónes";
+                            FinSi
+                        5:
+                            Si placaComp = placa1 Entonces
+                                Escribir "El vehículo de placa: ",placaComp;
+                                Escribir "Marca: ", marca1;
+                                Escribir "Propietario: ",owner1;
+                                Escribir "Teléfono de contacto: ",tel1;
+                                Escribir "Ha sido retirado";
+                                cantidad <- cantidad -1;
+                                placa1 <- placa2;
+                                marca1 <- marca2;
+                                owner1 <- owner2;
+                                tel1 <- tel2;
+                                placa2 <- placa3;
+                                marca2 <- marca3;
+                                owner2 <- owner3;
+                                tel2 <- tel3;
+                                placa3 <- placa4;
+                                marca3 <- marca4;
+                                owner3 <- owner4;
+                                tel3 <- tel4;
+                                placa4 <- "";
+                            FinSi
+                            Si placaComp = placa2 Entonces
+                                Escribir "El vehículo de placa: ",placaComp;
+                                Escribir "Marca: ", marca2;
+                                Escribir "Propietario: ",owner2;
+                                Escribir "Teléfono de contacto: ",tel2;
+                                Escribir "Ha sido retirado";
+                                cantidad <- cantidad -1;
+                                placa2 <- placa3;
+                                marca2 <- marca3;
+                                owner2 <- owner3;
+                                tel2 <- tel3;
+                                placa3 <- placa4;
+                                marca3 <- marca4;
+                                owner3 <- owner4;
+                                tel3 <- tel4;
+                                placa4 <- "";
+                            FinSi
+                            Si placaComp = placa3 Entonces
+                                Escribir "El vehículo de placa: ",placaComp;
+                                Escribir "Marca: ", marca3;
+                                Escribir "Propietario: ",owner3;
+                                Escribir "Teléfono de contacto: ",tel3;
+                                Escribir "Ha sido retirado";
+                                cantidad <- cantidad -1;
+                                placa3 <- placa4;
+                                marca3 <- marca4;
+                                owner3 <- owner4;
+                                tel3 <- tel4;
+                                placa4 <- "";
+                            FinSi
+                            Si placaComp = placa4 Entonces
+                                Escribir "El vehículo de placa: ",placaComp;
+                                Escribir "Marca: ", marca4;
+                                Escribir "Propietario: ",owner4;
+                                Escribir "Teléfono de contacto: ",tel4;
+                                Escribir "Ha sido retirado";
+                                cantidad <- cantidad -1;
+                                placa4 <- "";
+                            FinSi
+                            Si placaComp <> placa1 Y placaComp <> placa2 Y placaComp <> placa3 Y placaComp <> placa4 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," no se encuentra ";
+                                Escribir "en nuestras instalaciónes";
+                            FinSi
+                        6:	
+                            Si placaComp = placa1 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," se encuentra ";
+                                Escribir "en la posición: 1";
+                                Escribir "Marca: ", marca1;
+                                Escribir "Propietario: ",owner1;
+                                Escribir "Teléfono de contacto: ",tel1;
+                                Escribir "Ha sido retirado";
+                                cantidad <- cantidad -1;
+                                placa1 <- placa2;
+                                marca1 <- marca2;
+                                owner1 <- owner2;
+                                tel1 <- tel2;
+                                placa2 <- placa3;
+                                marca2 <- marca3;
+                                owner2 <- owner3;
+                                tel2 <- tel3;
+                                placa3 <- placa4;
+                                marca3 <- marca4;
+                                owner3 <- owner4;
+                                tel3 <- tel4;
+                                placa4 <- placa5;
+                                marca4 <- marca5;
+                                owner4 <- owner5;
+                                tel4 <- tel5;
+                                placa5 <- "";
+                            FinSi
+                            Si placaComp = placa2 Entonces
+                                Escribir "El vehículo de placa: ",placaComp;
+                                Escribir "Marca: ", marca2;
+                                Escribir "Propietario: ",owner2;
+                                Escribir "Teléfono de contacto: ",tel2;
+                                Escribir "Ha sido retirado";
+                                cantidad <- cantidad -1;
+                                placa2 <- placa3;
+                                marca2 <- marca3;
+                                owner2 <- owner3;
+                                tel2 <- tel3;
+                                placa3 <- placa4;
+                                marca3 <- marca4;
+                                owner3 <- owner4;
+                                tel3 <- tel4;
+                                placa4 <- placa5;
+                                marca4 <- marca5;
+                                owner4 <- owner5;
+                                tel4 <- tel5;
+                                placa5 <- "";
+                            FinSi
+                            Si placaComp = placa3 Entonces
+                                Escribir "El vehículo de placa: ",placaComp;
+                                Escribir "Marca: ", marca3;
+                                Escribir "Propietario: ",owner3;
+                                Escribir "Teléfono de contacto: ",tel3;
+                                Escribir "Ha sido retirado";
+                                cantidad <- cantidad -1;
+                                placa3 <- placa4;
+                                marca3 <- marca4;
+                                owner3 <- owner4;
+                                tel3 <- tel4;
+                                placa4 <- placa5;
+                                marca4 <- marca5;
+                                owner4 <- owner5;
+                                tel4 <- tel5;
+                                placa5 <- "";
+                            FinSi
+                            Si placaComp = placa4 Entonces
+                                Escribir "El vehículo de placa: ",placaComp;
+                                Escribir "Marca: ", marca4;
+                                Escribir "Propietario: ",owner4;
+                                Escribir "Teléfono de contacto: ",tel4;
+                                Escribir "Ha sido retirado";
+                                cantidad <- cantidad -1;
+                                placa4 <- placa5;
+                                marca4 <- marca5;
+                                owner4 <- owner5;
+                                tel4 <- tel5;
+                                placa5 <- "";
+                            FinSi
+                            Si placaComp = placa5 Entonces
+                                Escribir "El vehículo de placa: ",placaComp;
+                                Escribir "Marca: ", marca5;
+                                Escribir "Propietario: ",owner5;
+                                Escribir "Teléfono de contacto: ",tel5;
+                                Escribir "Ha sido retirado";
+                                cantidad <- cantidad -1;
+                                placa5 <- "";
+                            FinSi
+                            Si placaComp <> placa1 Y placaComp <> placa2 Y placaComp <> placa3 Y placaComp <> placa4 Y placaComp <> placa5 Entonces
+                                Escribir "El vehículo de placa: ",placaComp," no se encuentra ";
+                                Escribir "en nuestras instalaciónes";
+                            FinSi
+                    FinSegun
+                SiNo
+                    Escribir "No hay vehículos registrados";
+                FinSi
+                Escribir "Presione enter para salir";
+                Leer salir;
+                Limpiar Pantalla;
+        FinSegun
+    Hasta Que opcion = 4;
+    
+    
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- Punto 8 -->
+                <div id="T3P8">
+                    <h3>Punto 8</h3>
+                    <h5 type="enunciado">Enunciado: 8. La escuela automovilística "El Maestro" requiere una aplicación que permita registrar
+                        a sus clientes en los cursos de enseñanza automovilística y establecer quienes lo han aprobado para continuar con el
+                        trámite de adquirir la licencia de conducción. Para cada usuario se debe permitir registrar su ingreso al curso,
+                        consultar usuarios que hayan presentado el curso y resultados de la prueba del curso (si fueron aprobados o no).
+                        Recuerde que el sistema debe terminar cuando el usuario así lo indique. Tenga presente que la escuela tiene
+                        capacidad máxima de gestionar 8 usuarios en su totalidad.</h5>
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_8
+    //definir variables
+    
+    Definir fecha1 Como Caracter;
+    Definir fecha2 Como Caracter;
+    Definir fecha3 Como Caracter;
+    Definir fecha4 Como Caracter;
+    Definir fecha5 Como Caracter;
+    Definir fecha6 Como Caracter;
+    Definir fecha7 Como Caracter;
+    Definir fecha8 Como Caracter;
+    
+    Definir u1 Como Caracter;
+    Definir u2 Como Caracter;
+    Definir u3 Como Caracter;
+    Definir u4 Como Caracter;
+    Definir u5 Como Caracter;
+    Definir u6 Como Caracter;
+    Definir u7 Como Caracter;
+    Definir u8 Como Caracter;
+    
+    Definir aprove1 Como Logico;
+    Definir aprove2 Como Logico;
+    Definir aprove3 Como Logico;
+    Definir aprove4 Como Logico;
+    Definir aprove5 Como Logico;
+    Definir aprove6 Como Logico;
+    Definir aprove7 Como Logico;
+    Definir aprove8 Como Logico;
+    
+    //Inicializar algunas variables para tener como "Base de datos"
+    u1 <- "John";
+    fecha1 <- "01/03/2022";
+    aprove1 <- Verdadero;
+    
+    //Menú
+    Definir opcion Como Entero;
+    Definir cantidad Como Entero;
+    Definir salir Como Caracter;
+    cantidad <- 1;
+    Repetir
+        Escribir "---El Maestro---";
+        Escribir "1. Ingresar estudiante";
+        Escribir "2. Consultar estudiante";
+        Escribir "3. Salir del sistema";
+        
+        Leer opcion;
+        Limpiar Pantalla;
+        Segun opcion Hacer
+            1://Ingresar estudiantes
+                Segun cantidad Hacer
+                    1:
+                        Escribir "Ingrese la fecha de ingreso: (DD/MM/AAAA)";
+                        Leer fecha2;
+                        Escribir "Ingrese el nombre del estudiante";
+                        Leer u2;
+                        Si u2 <> u1 Entonces
+                            Escribir "¿El estudiante aprovo? (Verdadero o Falso)";
+                            Leer aprove2;
+                            cantidad <- 2;
+                        SiNo
+                            Escribir "El estudiante ya existe";
+                        FinSi
+                        
+                    2:
+                        Escribir "Ingrese la fecha de ingreso: (DD/MM/AAAA)";
+                        Leer fecha3;
+                        Escribir "Ingrese el nombre del estudiante";
+                        Leer u3;
+                        Si u3 <> u1 O u3 <> u2 Entonces
+                            Escribir "¿El estudiante aprovo? (Verdadero o Falso)";
+                            Leer aprove3;
+                            cantidad <- 3;
+                        SiNo
+                            Escribir "El estudiante ya existe";
+                        FinSi
+                        
+                    3:
+                        Escribir "Ingrese la fecha de ingreso: (DD/MM/AAAA)";
+                        Leer fecha4;
+                        Escribir "Ingrese el nombre del estudiante";
+                        Leer u4;
+                        Si u4 <> u1 O u4 <> u2 O u4 <> u3 Entonces
+                            Escribir "¿El estudiante aprovo? (Verdadero o Falso)";
+                            Leer aprove4;
+                            cantidad <- 4;
+                        SiNo
+                            Escribir "El estudiante ya existe";
+                        FinSi
+                        
+                    4:
+                        Escribir "Ingrese la fecha de ingreso: (DD/MM/AAAA)";
+                        Leer fecha5;
+                        Escribir "Ingrese el nombre del estudiante";
+                        Leer u5;
+                        Si u5 <> u1 O u5 <> u2 O u5 <> u3 O u5 <> u4 Entonces
+                            Escribir "¿El estudiante aprovo? (Verdadero o Falso)";
+                            Leer aprove5;
+                            cantidad <- 5;
+                        SiNo
+                            Escribir "El estudiante ya existe";
+                        FinSi
+                        
+                    5:
+                        Escribir "Ingrese la fecha de ingreso: (DD/MM/AAAA)";
+                        Leer fecha6;
+                        Escribir "Ingrese el nombre del estudiante";
+                        Leer u6;
+                        Si u6 <> u1 O u6 <> u2 O u6 <> u3 O u6 <> u4 O u6 <> u5 Entonces
+                            Escribir "¿El estudiante aprovo? (Verdadero o Falso)";
+                            Leer aprove6;
+                            cantidad <- 6;
+                        SiNo
+                            Escribir "El estudiante ya existe";
+                        FinSi
+                        
+                    6:
+                        Escribir "Ingrese la fecha de ingreso: (DD/MM/AAAA)";
+                        Leer fecha7;
+                        Escribir "Ingrese el nombre del estudiante";
+                        Leer u7;
+                        Si u7 <> u1 O u7 <> u2 O u7 <> u3 O u7 <> u4 O u7 <> u5 O u7 <> u6 Entonces
+                            Escribir "¿El estudiante aprovo? (Verdadero o Falso)";
+                            Leer aprove7;
+                            cantidad <- 7;
+                        SiNo
+                            Escribir "El estudiante ya existe";
+                        FinSi
+                        
+                    7:
+                        Escribir "Ingrese la fecha de ingreso: (DD/MM/AAAA)";
+                        Leer fecha8;
+                        Escribir "Ingrese el nombre del estudiante";
+                        Leer u8;
+                        Si u8 <> u1 O u8 <> u2 O u8 <> u3 O u8 <> u4 O u8 <> u5 O u8 <> u6 O u8 <> u7 Entonces
+                            Escribir "¿El estudiante aprovo? (Verdadero o Falso)";
+                            Leer aprove8;
+                            cantidad <- 8;
+                        SiNo
+                            Escribir "El estudiante ya existe";
+                        FinSi
+                        
+                    8:
+                        Escribir "La base de datos se encuentra llena";
+                FinSegun
+                
+                Escribir "Presione enter para continuar";
+                Leer salir;
+                Limpiar Pantalla;
+            2: //Consultar estudiantes
+                Segun cantidad Hacer
+                    1: 
+                        Escribir "Estudiante: ",u1;
+                        Escribir "Fecha de ingreso: ",fecha1;
+                        Escribir "¿Aprovó?: ",aprove1;
+                        Escribir "----------------------------";
+                    2:
+                        Escribir "Estudiante: ",u1;
+                        Escribir "Fecha de ingreso: ",fecha1;
+                        Escribir "¿Aprovó?: ",aprove1;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u2;
+                        Escribir "Fecha de ingreso: ",fecha2;
+                        Escribir "¿Aprovó?: ",aprove2;
+                        Escribir "----------------------------";
+                    3:
+                        Escribir "Estudiante: ",u1;
+                        Escribir "Fecha de ingreso: ",fecha1;
+                        Escribir "¿Aprovó?: ",aprove1;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u2;
+                        Escribir "Fecha de ingreso: ",fecha2;
+                        Escribir "¿Aprovó?: ",aprove2;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u3;
+                        Escribir "Fecha de ingreso: ",fecha3;
+                        Escribir "¿Aprovó?: ",aprove3;
+                        Escribir "----------------------------";
+                    4:
+                        Escribir "Estudiante: ",u1;
+                        Escribir "Fecha de ingreso: ",fecha1;
+                        Escribir "¿Aprovó?: ",aprove1;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u2;
+                        Escribir "Fecha de ingreso: ",fecha2;
+                        Escribir "¿Aprovó?: ",aprove2;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u3;
+                        Escribir "Fecha de ingreso: ",fecha3;
+                        Escribir "¿Aprovó?: ",aprove3;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u4;
+                        Escribir "Fecha de ingreso: ",fecha4;
+                        Escribir "¿Aprovó?: ",aprove4;
+                        Escribir "----------------------------";
+                    5:
+                        Escribir "Estudiante: ",u1;
+                        Escribir "Fecha de ingreso: ",fecha1;
+                        Escribir "¿Aprovó?: ",aprove1;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u2;
+                        Escribir "Fecha de ingreso: ",fecha2;
+                        Escribir "¿Aprovó?: ",aprove2;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u3;
+                        Escribir "Fecha de ingreso: ",fecha3;
+                        Escribir "¿Aprovó?: ",aprove3;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u4;
+                        Escribir "Fecha de ingreso: ",fecha4;
+                        Escribir "¿Aprovó?: ",aprove4;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u5;
+                        Escribir "Fecha de ingreso: ",fecha5;
+                        Escribir "¿Aprovó?: ",aprove5;
+                        Escribir "----------------------------";
+                    6:
+                        Escribir "Estudiante: ",u1;
+                        Escribir "Fecha de ingreso: ",fecha1;
+                        Escribir "¿Aprovó?: ",aprove1;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u2;
+                        Escribir "Fecha de ingreso: ",fecha2;
+                        Escribir "¿Aprovó?: ",aprove2;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u3;
+                        Escribir "Fecha de ingreso: ",fecha3;
+                        Escribir "¿Aprovó?: ",aprove3;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u4;
+                        Escribir "Fecha de ingreso: ",fecha4;
+                        Escribir "¿Aprovó?: ",aprove4;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u5;
+                        Escribir "Fecha de ingreso: ",fecha5;
+                        Escribir "¿Aprovó?: ",aprove5;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u6;
+                        Escribir "Fecha de ingreso: ",fecha6;
+                        Escribir "¿Aprovó?: ",aprove6;
+                        Escribir "----------------------------";
+                    7:
+                        Escribir "Estudiante: ",u1;
+                        Escribir "Fecha de ingreso: ",fecha1;
+                        Escribir "¿Aprovó?: ",aprove1;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u2;
+                        Escribir "Fecha de ingreso: ",fecha2;
+                        Escribir "¿Aprovó?: ",aprove2;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u3;
+                        Escribir "Fecha de ingreso: ",fecha3;
+                        Escribir "¿Aprovó?: ",aprove3;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u4;
+                        Escribir "Fecha de ingreso: ",fecha4;
+                        Escribir "¿Aprovó?: ",aprove4;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u5;
+                        Escribir "Fecha de ingreso: ",fecha5;
+                        Escribir "¿Aprovó?: ",aprove5;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u6;
+                        Escribir "Fecha de ingreso: ",fecha6;
+                        Escribir "¿Aprovó?: ",aprove6;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u7;
+                        Escribir "Fecha de ingreso: ",fecha7;
+                        Escribir "¿Aprovó?: ",aprove7;
+                        Escribir "----------------------------";
+                    8:
+                        Escribir "Estudiante: ",u1;
+                        Escribir "Fecha de ingreso: ",fecha1;
+                        Escribir "¿Aprovó?: ",aprove1;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u2;
+                        Escribir "Fecha de ingreso: ",fecha2;
+                        Escribir "¿Aprovó?: ",aprove2;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u3;
+                        Escribir "Fecha de ingreso: ",fecha3;
+                        Escribir "¿Aprovó?: ",aprove3;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u4;
+                        Escribir "Fecha de ingreso: ",fecha4;
+                        Escribir "¿Aprovó?: ",aprove4;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u5;
+                        Escribir "Fecha de ingreso: ",fecha5;
+                        Escribir "¿Aprovó?: ",aprove5;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u6;
+                        Escribir "Fecha de ingreso: ",fecha6;
+                        Escribir "¿Aprovó?: ",aprove6;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u7;
+                        Escribir "Fecha de ingreso: ",fecha7;
+                        Escribir "¿Aprovó?: ",aprove7;
+                        Escribir "----------------------------";
+                        Escribir "Estudiante: ",u8;
+                        Escribir "Fecha de ingreso: ",fecha8;
+                        Escribir "¿Aprovó?: ",aprove8;
+                        Escribir "----------------------------";
+                        
+                FinSegun
+                
+                Escribir "Presione enter para continuar";
+                Leer salir;
+                Limpiar Pantalla;
+        FinSegun
+    Hasta Que opcion = 3;
+    
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+            </div>
+            <!-- Taller 4 -->
+            <button class="acordeon">Taller 4</button>
+            <div class="panel">
+                <!-- Punto 1 -->
+                <div id="T4P1">
+                    <h3>Punto 1</h3>
+                    <h5 type="enunciado">Enunciado: 1. Crear un vector de tipo Entero con 5 posiciones, llenarlo con información solicitada
+                        al usuario. Después de recoger toda la información, se requiere imprimir el índice de cada posición en el arreglo
+                        con su valor de la siguiente manera:</h5>
+                    <img src="./img/punto1T4.png">
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_1
+    Definir vector Como Entero;
+    Dimension vector[5];
+    Definir i Como Entero;
+    
+    Para i <- 0 Hasta 4 Hacer
+        Escribir "Digite un número de su elección";
+        Leer vector[i];
+    FinPara
+    Limpiar Pantalla;
+    Para i <- 0 Hasta 4 Hacer
+        Escribir "[",i,"] = ",vector[i];
+    FinPara
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- Punto 2 -->
+                <div id="T4P2">
+                    <h3>Punto 2</h3>
+                    <h5 type="enunciado">Enunciado: 2. Crear un arreglo de números enteros de 20 posiciones, el cual, debe ser llenado con
+                        números aleatorios entre 1 y 100; después de haber llenado dicho arreglo, se debe volver a recorrer utilizando un
+                        ciclo diferente al que se usó para llenarse e imprimir los números pares e impares. Ejemplo</h5>
+                    <img src="./img/punto2T4.png">
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_2
+    //Definir variables
+    Definir arreglo Como Entero;
+    Dimension arreglo[20];
+    
+    Definir i Como Entero;
+    
+    //Ciclo "para" rellenar arreglo
+    Para i <- 0 Hasta 19 Hacer
+        arreglo[i] <- Aleatorio(1,100);
+    FinPara
+    
+    //comprobar e imprimir pares
+    Escribir "Números pares: " Sin Saltar;
+    Para i <- 0 hasta 19 Hacer
+        Si arreglo[i] MOD 2 = 0 Entonces
+            Escribir arreglo[i]," " Sin Saltar;
+        FinSi
+    FinPara
+    
+    Escribir "";
+    
+    //comprobar e imprimir impares
+    Escribir "Números impares: " Sin Saltar;
+    Para i <- 0 hasta 19 Hacer
+        Si arreglo[i] MOD 2 <> 0 Entonces
+            Escribir arreglo[i]," " Sin Saltar;
+        FinSi
+    FinPara
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- Punto 3 -->
+                <div id="T4P3">
+                    <h3>Punto 3</h3>
+                    <h5 type="enunciado">Enunciado: 3. Imprimir los números primos del 1 al 1000, el resultado debe ser buscado de forma
+                        matemática.</h5>
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_3
+    Definir nums Como Entero;
+    Dimension nums[1000];
+    
+    Definir indice Como Entero;
+    Definir indice2 Como Entero;
+    Definir contadorMod Como Entero;
+    Definir contadorInd Como Entero;
+    
+    Escribir "Calculando los números primos de 1 a 1000";
+    Escribir "Espere porfavor...";
+    
+    Para indice <- 1 hasta 1000 Hacer //Calcular los números primos
+        
+        Si indice = 2 entonces //Escribe el primer número primo es decir: 2
+            contadorInd <- 1;
+            nums[contadorInd] <- indice;
+        FinSi
+        
+        Si indice > 2 Entonces//Calcula los númers primos a partir del 3 hasta el 1000
+            
+            contadorMod <- 0;//Reinicia el conteo de modulos (Para saber si tiene mas de 2 divisores de modulo diferente de 0)
+            
+            Para indice2 <- 1 Hasta indice Hacer
+                    Si indice MOD indice2 = 0 Entonces//si el modulo es 0 cuenta un nuevo divisor
+                        contadorMod <- contadorMod + 1;
+                    FinSi
+                FinPara
+                
+            Si contadorMod = 2 Entonces // si hay  2 divisores de modulo 0  guarda el modulo
+                contadorInd <- contadorInd + 1; //guarda en que posición del arreglo va
+                nums[contadorInd] <- indice;
+            FinSi
+            
+        FinSi
+        
+    FinPara
+    
+    Limpiar Pantalla;
+    //imprime los datos guardados en el arreglo nums 
+    Para indice <- 1 hasta contadorInd Hacer
+        Escribir nums[indice];
+    FinPara
+    
+    Escribir "--------------------------------------";
+    Escribir contadorInd, " números primos encontrados";
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- Punto 4 -->
+                <div id="T4P4">
+                    <h3>Punto 4</h3>
+                    <h5 type="enunciado">Enunciado: 4. Dada la siguiente matriz bidimensional, el cual debe de quemar en el código</h5>
+                    <img src="./img/punto4T4_1.png">
+                    <h5 type="enunciado">Utilizando el conocimiento adquirido, a excepción de hacerlo de forma manual, imprima la siguiente
+                        matriz bidimensional.</h5>
+                    <img src="./img/punto4T4_2.png">
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_4
+    //definir variables
+    Definir matriz Como Caracter;
+    Dimension matriz[4,5];
+    
+    Definir fila como Entero;
+    Definir columna como Entero;
+    
+    //"Quemar" la matriz
+    
+    matriz[0,0] <- "01";
+    matriz[0,1] <- "02";
+    matriz[0,2] <- "03";
+    matriz[0,3] <- "04";
+    matriz[0,4] <- "05";
+    matriz[1,0] <- "06";
+    matriz[1,1] <- "07";
+    matriz[1,2] <- "08";
+    matriz[1,3] <- "09";
+    matriz[1,4] <- "10";
+    matriz[2,0] <- "11";
+    matriz[2,1] <- "12";
+    matriz[2,2] <- "13";
+    matriz[2,3] <- "14";
+    matriz[2,4] <- "15";
+    matriz[3,0] <- "16";
+    matriz[3,1] <- "17";
+    matriz[3,2] <- "18";
+    matriz[3,3] <- "19";
+    matriz[3,4] <- "20";
+    
+    //ciclo para recorer filas
+    Para fila <- 0 Hasta 3 Hacer
+        //condicional para saber si es fila par o impar 
+        Si fila mod 2 = 0 Entonces
+            //si es par se recorre normal
+            Para columna <- 0 Hasta 4 Hacer
+                Escribir Sin Saltar matriz[fila,columna]," ";
+            FinPara
+            Escribir "";
+            
+        SiNo
+            //si es impar se recorre al reves 
+            Para columna <- 4 Hasta 0 Con Paso -1 Hacer
+                Escribir Sin Saltar matriz[fila,columna]," ";
+            FinPara
+            Escribir "";
+            
+        FinSi
+        
+    FinPara
+    
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+                <hr>
+                <!-- Punto 5 -->
+                <div id="T4P5">
+                    <h3>Punto 5</h3>
+                    <h5 type="enunciado">Enunciado: 5. Se debe de imprimir el siguiente cuadro</h5>
+                    <img src="./img/punto5T4.png">
+                    <h5 type="enunciado">El usuario deberá insertar la fila y columna de la cual desea ver el resultado, el resultado de
+                        cada celda debe estar previamente calculado en una matriz bidimensional la cual cada resultado obedecerá a la fila y
+                        columna insertada por el usuario.</h5>
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_5
+    //Definir variables
+    Definir filas Como Entero;
+    Definir columnas Como Entero;
+    
+    Definir fila Como Entero;
+    Definir columna Como Entero;
+    
+    Definir enter Como Caracter;
+    
+    Definir Resultado Como Entero;
+    Dimension Resultado[10,10];
+    
+    Definir continuar Como Caracter;
+    
+    //Instrucciones
+    Escribir "Maximice la pestaña para visualizar correctamente el programa";
+    Escribir "Presione enter para continuar";
+    Leer enter;
+    Limpiar Pantalla;
+    
+    Repetir
+        //Mostrar la matriz ------------------------------
+        Escribir "Columnas->" Sin Saltar;
+        Para columna <- 0 Hasta 9 Hacer
+            Escribir Sin Saltar " |   ",columna,"  | ";
+        FinPara
+        Escribir "";
+        
+        Para fila <- 0 Hasta 9 Hacer
+            
+            Escribir "Fila ",fila," -->"Sin Saltar;
+            
+            Para columna <- 0 Hasta 9 Hacer
+                Si fila < 9 Entonces
+                    Escribir Sin Saltar " |",columna+1," x ",fila+1," | ";
+                SiNo
+                    Escribir Sin Saltar " |",columna+1," x ",fila+1,"| ";
+                FinSi
+                
+                Resultado[fila,columna] <- (fila+1)*(columna+1);
+            FinPara
+            
+            Escribir "";
+        FinPara
+        
+        //-----------------------------------------------
+        
+        //menú de usuario
+        Escribir "";
+        Escribir "Elija la columna de la cual desea conocer el resultado: ";
+        Leer columnas;
+        Escribir "Elija la fila de la cual desea conocer el resultado: ";
+        Leer filas;
+        
+        Escribir "El resultado de la multiplicación es: ", Resultado[filas,columnas];
+        Escribir "";
+        Escribir "Si desea continuar presione enter, si no escriba la letra (n) y luego presione enter";
+        Leer continuar;
+        Limpiar Pantalla;
+        
+    Hasta Que continuar = "n";
+    
+    
+FinProceso
+                    </code>
+                    </pre>
+                </div>
+            </div>
+            <!-- Taller 5 -->
+            <button class="acordeon">Taller 5</button>
+            <div class="panel">
+                <!-- Punto 1 -->
+                <div id="T5P1">
+                    <h3>Punto 1</h3>
+                    <h5 type="enunciado">Enunciado: 1. Organizar todos los puntos del taller de condicionales en modo funciones.</h5>
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+SubProceso CalculoEdad (edad)
+    Si edad >= 18 Entonces
+        Escribir "Usted es mayor de edad";
+    FinSi
+FinSubProceso
+
+
+Proceso punto_1
+    Definir edad Como Entero;
+    
+    Escribir "Digite su edad:";
+    Leer edad;
+    CalculoEdad(edad);
+    
+FinProceso
+                    </code>
+                    </pre>
+                    <h5 type="enunciado">Se muestra unicamente el punto 1, los demás se encuentran haciendo click en los siguientes botones</h5>
+                    <button id="punto2Tco" type="nuevo" onclick="botonTalleres(this)">Punto 2</button>
+                    <button id="punto3Tco" type="nuevo" onclick="botonTalleres(this)">Punto 3</button>
+                    <button id="punto4Tco" type="nuevo" onclick="botonTalleres(this)">Punto 4</button>
+                    <button id="punto5Tco" type="nuevo" onclick="botonTalleres(this)">Punto 5</button>
+                    <button id="punto6Tco" type="nuevo" onclick="botonTalleres(this)">Punto 6</button>
+                    <button id="punto7Tco" type="nuevo" onclick="botonTalleres(this)">Punto 7</button>
+                    <button id="punto8Tco" type="nuevo" onclick="botonTalleres(this)">Punto 8</button>
+                    <button id="punto9Tco" type="nuevo" onclick="botonTalleres(this)">Punto 9</button>
+                    <button id="punto10Tco" type="nuevo" onclick="botonTalleres(this)">Punto 10</button>
+                </div>
+                <hr>
+                <div id="T5P2">
+                    <h3>Punto 2</h3>
+                    <h5 type="enunciado">Enunciado: 2. Organizar los puntos 6, 7 y 8 del taller de ciclos en modo funciones.</h5>
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+Proceso punto_6 
+    //Definir variables
+    Definir usuario1 Como Caracter;
+    usuario1 <- "";
+    Definir usuario2 Como Caracter;
+    usuario2 <- " ";
+    Definir usuario3 Como Caracter;
+    usuario3 <- "  ";
+    Definir org1 Como Caracter;
+    org1 <- "";
+    Definir org2 Como Caracter;
+    org2 <- " ";
+    Definir org3 Como Caracter;
+    org3 <- "  ";
+    Definir tel1 Como Entero;
+    tel1 <- 0;
+    Definir tel2 Como Entero;
+    tel2 <- 1;
+    Definir tel3 Como Entero;
+    tel3 <- 2;
+    
+    Definir salir Como Caracter;
+    
+    Definir usuarios Como Entero;
+    usuarios <- 0;
+    Definir opcion Como Entero;
+    opcion <- 0;
+    
+    //Ciclo del menú 
+    Repetir
+        Escribir "--- Menú de usuario---";
+        Escribir "1. Añadir contacto";
+        Escribir "2. Consultar contactos";
+        Escribir "3. Eliminar contactos";
+        Escribir "4. Salir del sistema";
+        Leer opcion;
+        Limpiar Pantalla;
+        
+        Segun opcion Hacer
+            1:	//Agregar contactos
+                Agregar(usuarios, usuario1, usuario2, usuario3, tel1, tel2, tel3, org1, org2, org3);
+                
+            2:	//Consulta de contactos
+                Consulta(usuarios, usuario1, usuario2, usuario3, tel1, tel2, tel3, org1, org2, org3);
+            3: 
+                //Eliminar usuarios
+                Si usuarios = 0 Entonces
+                    Escribir "No tiene contactos guardados";
+                FinSi
+                Si usuarios = 1 Entonces
+                    usuarios <- 0;
+                    Escribir "Contacto eliminado";
+                FinSi
+                Si usuarios = 2 Entonces
+                    Escribir "Cual de los contactos desea eliminar";
+                    Escribir "1. Contacto 1 :",usuario1,", Telefono: ",tel1, ",Organización: ",org1;
+                    Escribir "2. Contacto 2 :",usuario2,", Telefono: ",tel2, ",Organización: ",org2;
+                    Leer opcion;
+                    Limpiar Pantalla;
+                    
+                    Segun opcion Hacer
+                        1: 
+                            usuarios <- 1;
+                            
+                            usuario1 <- usuario2;
+                            tel1 <- tel2;
+                            org1 <- org2;
+                            
+                            usuario2 <- "";
+                            tel2 <- 0;
+                            org2 <- "";
+                            Escribir "Contacto eliminado";
+                        2:
+                            usuarios <- 1;
+                            usuario2 <- "";
+                            tel2 <- 0;
+                            org2 <- "";
+                            Escribir "Contacto eliminado";
+                    FinSegun
+                FinSi
+                Si usuarios = 3 Entonces
+                    Escribir "Cual de los contactos desea eliminar";
+                    Escribir "1. Contacto 1 :",usuario1,", Telefono: ",tel1, ",Organización: ",org1;
+                    Escribir "2. Contacto 2 :",usuario2,", Telefono: ",tel2, ",Organización: ",org2;
+                    Escribir "3. Contacto 3 :",usuario3,", Telefono: ",tel3, ",Organización: ",org3;
+                    Leer opcion;
+                    Segun opcion Hacer
+                        1: 
+                            usuarios <- 2;
+                            
+                            usuario1 <- usuario2;
+                            tel1 <- tel2;
+                            org1 <- org2;
+                            
+                            usuario2 <- usuario3;
+                            tel2 <- tel3;
+                            org2 <- org3;
+                            
+                            usuario3 <- "";
+                            tel3 <- 0;
+                            org3 <- "";
+                            Escribir "Contacto eliminado";
+                        2:
+                            usuarios <- 2;
+                            
+                            usuario2 <- usuario3;
+                            tel2 <- tel3;
+                            org2 <- org3;
+                            
+                            usuario3 <- "";
+                            tel3 <- 0;
+                            org3 <- "";
+                            Escribir "Contacto eliminado";
+                        3:
+                            usuarios <- 2;
+                            
+                            usuario3 <- "";
+                            tel3 <- 0;
+                            org3 <- "";
+                            Escribir "Contacto eliminado";
+                    FinSegun
+                FinSi
+                
+                Escribir "Presione enter para salir";
+                Leer salir;
+                Limpiar Pantalla;
+        FinSegun
+    Hasta Que opcion <> 1 y opcion <> 2 y opcion <> 3;
+FinProceso
+
+
+SubProceso Agregar(usuarios, usuario1, usuario2, usuario3, tel1, tel2, tel3, org1, org2, org3)
+    Definir salir Como Caracter;
+    
+    Si usuarios = 3 Entonces
+        Escribir "Su libreta de contactos está llena, no se pueden agregar más contactos";
+    FinSi
+    
+    Si usuarios = 2 Entonces
+        
+        Escribir "Escriba el nombre del contacto";
+        Leer usuario3;
+        Si usuario3 = usuario1 o  usuario3 = usuario2 Entonces
+            Escribir "El contacto de nombre: ",usuario3," ya existe";
+            usuario3 <- "";
+        SiNo
+            Escribir "Digite el número de teléfono del contacto";
+            Leer tel3;
+            Si tel3 = tel1 o tel3 = tel2 Entonces
+                Escribir "El contacto de teléfono: ",tel3," ya existe";
+            SiNo
+                Escribir "Escriba la organización del contacto";
+                Leer org3;
+                usuarios <- 3;
+                Escribir "Contacto agregado";
+            FinSi
+        FinSi
+        
+    FinSi
+    
+    Si usuarios = 1 Entonces
+        
+        Escribir "Escriba el nombre del contacto";
+        Leer usuario2;
+        Si usuario2 = usuario1 Entonces
+            Escribir "El contacto de nombre: ",usuario2," ya existe";
+        SiNo
+            Escribir "Digite el número de teléfono del contacto";
+            Leer tel2;
+            Si tel2 = tel1 Entonces
+                Escribir "El contacto de teléfono: ",tel2," ya existe";
+            SiNo
+                Escribir "Escriba la organización del contacto";
+                Leer org2;
+                usuarios <- 2;
+                Escribir "Contacto agregado";
+            FinSi
+        FinSi
+    FinSi
+    
+    Si usuarios = 0 Entonces
+        Escribir "Escriba el nombre del contacto";
+        Leer usuario1;
+        Escribir "Digite el número de teléfono del contacto";
+        Leer tel1;
+        Escribir "Escriba la organización del contacto";
+        Leer org1;
+        usuarios <- 1;
+        Escribir "Contacto agregado";
+    FinSi
+    
+    Escribir "Presione enter para salir";
+    Leer salir;
+    Limpiar Pantalla;
+FinSubProceso
+
+
+SubProceso Consulta(usuarios, usuario1, usuario2, usuario3, tel1, tel2, tel3, org1, org2, org3)
+    Definir  salir Como Caracter;
+    Si usuarios = 0 Entonces
+        Escribir "No hay contactos que visualizar";
+    FinSi
+    Si usuarios = 1 Entonces
+        Escribir "Contacto ",usuarios;
+        Escribir "Nombre: ",usuario1;
+        Escribir "Telefono: ",tel1;
+        Escribir "Organización: ",org1;
+        Escribir "-------------------------";
+    FinSi
+    Si usuarios = 2 Entonces
+        Escribir "Contacto ",usuarios-1;
+        Escribir "Nombre: ",usuario1;
+        Escribir "Telefono: ",tel1;
+        Escribir "Organización: ",org1;
+        Escribir "-------------------------";
+        Escribir "Contacto ",usuarios;
+        Escribir "Nombre: ",usuario2;
+        Escribir "Telefono: ",tel2;
+        Escribir "Organización: ",org2;
+        Escribir "-------------------------";
+    FinSi
+    Si usuarios = 3 Entonces 
+        Escribir "Contacto ",usuarios-2;
+        Escribir "Nombre: ",usuario1;
+        Escribir "Telefono: ",tel1;
+        Escribir "Organización: ",org1;
+        Escribir "-------------------------";
+        Escribir "Contacto ",usuarios-1;
+        Escribir "Nombre: ",usuario2;
+        Escribir "Telefono: ",tel2;
+        Escribir "Organización: ",org2;
+        Escribir "-------------------------";
+        Escribir "Contacto ",usuarios;
+        Escribir "Nombre: ",usuario3;
+        Escribir "Telefono: ",tel3;
+        Escribir "Organización: ",org3;
+        Escribir "-------------------------";
+    FinSi
+    
+    Escribir "Presione enter para salir";
+    Leer salir;
+    Limpiar Pantalla;
+FinSubProceso
+                    </code>
+                    </pre>
+                    <h5 type="enunciado">Se muestra unicamente el punto 6, los demás se encuentran haciendo click en los siguientes botones</h5>
+                    <button id="punto7Tci" type="nuevo" onclick="botonTalleres(this)">Punto 7</button>
+                    <button id="punto8Tci" type="nuevo" onclick="botonTalleres(this)">Punto 8</button>
+                </div>
+                <div id="T5P3">
+                    <h3>Punto 3</h3>
+                    <h5 type="enunciado">Enunciado: 3. Organizar todos los puntos del taller de arreglos en modo funciones.</h5>
+                    <h4>Código</h4>
+                    <pre>
+                    <code>
+SubProceso LeerNum()
+    Definir vector Como Entero;
+    Dimension vector[5];
+    Definir i Como Entero;
+    
+    Para i <- 0 Hasta 4 Hacer
+        Escribir "Digite un número de su elección";
+        Leer vector[i];
+    FinPara
+    Limpiar Pantalla;
+    Para i <- 0 Hasta 4 Hacer
+        Escribir "[",i,"] = ",vector[i];
+    FinPara
+FinSubProceso
+
+SubProceso VerVector(vector)
+    
+FinSubProceso
+
+Proceso punto_1
+    
+    LeerNum();
+
+FinProceso
+                    </code>
+                    </pre>
+                    <h5 type="enunciado">Se muestra unicamente el punto 1, los demás se encuentran haciendo click en los siguientes botones</h5>
+                    <button id="punto2Ta" type="nuevo" onclick="botonTalleres(this)">Punto 2</button>
+                    <button id="punto3Ta" type="nuevo" onclick="botonTalleres(this)">Punto 3</button>
+                    <button id="punto4Ta" type="nuevo" onclick="botonTalleres(this)">Punto 4</button>
+                    <button id="punto5Ta" type="nuevo" onclick="botonTalleres(this)">Punto 5</button>
+                </div>
+            </div>
+        </article>
+    </div>
+    <button id="volverpf" type="nuevo" class="irInicio" onclick="botonTalleres(this)">Volver</button>
+</body>
+
+</html>

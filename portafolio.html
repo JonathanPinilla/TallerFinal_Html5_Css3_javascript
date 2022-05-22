@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body id="cuerpo" onload="main()">
+    <header>
+    
+        <nav>
+            <ul class="uls">
+                <a class="button" id="pg1" href="./indexhv.html">Inicio</a>
+                <a class="button" id="pg2" href="./experiencia.html">Experiencia</a>
+                <a class="button" id="pg3" href="./referenciasPersonales.html">Referencias Personales</a>
+                <a class="button" id="pg4" href="./referenciasFamiliares.html">Referencias Familiares</a>
+                <a class="button" id="pg5" href="./estudios.html">Estudios Realizados</a>
+                <a class="button" id="pg6" href="./portafolio.html">Portafolio</a>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenido">
+        <ul class="tema uls">
+            <a id="icoTema" class="material-symbols-rounded"
+                style="color: #FF5757; margin-right: 10px;">format_color_fill</a>
+            <a class="button" onclick="clicRojo()" id="rojo"></a>
+            <a class="button" onclick="clicAzul()" id="azul"></a>
+            <a class="button" onclick="clicVerde()" id="verde"></a>
+            <a class="button" onclick="colorDefault()" id="colorDef"></a>
+        </ul>
+        <div>
+            <button type="nuevo" id="java" onclick="botonTalleres(this)">Talleres de Java</button>
+            <button type="nuevo" id="pseint" onclick="botonTalleres(this)">Talleres de Pseint</button>
+        </div>
+        
+    </div>
+    <button type="nuevo" onclick="redirButton()" class="irInicio">Página inicial</button>
+</body>
+
+</html>
